@@ -99,13 +99,13 @@
     <script>
         // --- 1. CONFIGURAZIONE PAYPAL ---
         // Sostituisci qui con il tuo username PayPal reale
-        const PAYPAL_USERNAME = "YOUR_PAYPAL_USERNAME"; 
+        const PAYPAL_USERNAME = "pietromarzio"; 
         const DEFAULT_AMOUNT = "5"; // Inserisci "" se vuoi che l'utente scelga l'importo liberamente
         const CURRENCY = "EUR";
 
         // Generazione dinamica del link
         const paypalBtn = document.getElementById('paypal-button');
-        if (PAYPAL_USERNAME && PAYPAL_USERNAME !== "YOUR_PAYPAL_USERNAME") {
+        if (PAYPAL_USERNAME && PAYPAL_USERNAME !== "pietromarzio") {
             let url = `https://paypal.me/${PAYPAL_USERNAME.trim()}`;
             if (DEFAULT_AMOUNT.trim() !== "") {
                 url += `/${DEFAULT_AMOUNT.trim()}${CURRENCY.trim()}`;
