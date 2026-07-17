@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supporta Pizza Alchemy / Support Pizza Alchemy</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'media', // Si adatta automaticamente al tema del sistema operativo dell'utente
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            text: '#2B2119',
+                            bg: '#FBF6EE',
+                            element: '#F3EBDD',
+                            selected: '#EADCC5',
+                            secondary: '#7A6A58',
+                            accent: '#C93A2B',
+                            onAccent: '#FFF8F0',
+                            accentSoft: '#F6DFD4',
+                            border: '#E3D6C2',
+                        },
+                        brandDark: {
+                            text: '#F5EDE2',
+                            bg: '#1A1512',
+                            element: '#282019',
+                            selected: '#3A2D21',
+                            secondary: '#B8A893',
+                            accent: '#E05A45',
+                            onAccent: '#FFF8F0',
+                            accentSoft: '#4A2A21',
+                            border: '#3D3225',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['ui-serif', 'Georgia', 'serif'],
+                        rounded: ['ui-rounded', 'SF Pro Rounded', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-brand-bg text-brand-text dark:bg-brandDark-bg dark:text-brandDark-text font-rounded antialiased min-h-screen flex items-center justify-center p-4 sm:p-6">
+
+    <!-- Card Principale -->
+    <main class="w-full max-w-md bg-brand-element dark:bg-brandDark-element p-8 rounded-[32px] border border-brand-border dark:border-brandDark-border shadow-xl text-center space-y-6">
+        
+        <!-- Icona animata / Logo -->
+        <div class="w-20 h-20 bg-brand-accentSoft dark:bg-brandDark-accentSoft rounded-full flex items-center justify-center mx-auto border-2 border-brand-accent dark:border-brandDark-accent">
+            <span class="text-4xl animate-bounce">🍕</span>
+        </div>
+
+        <!-- Lingua Toggle Rapido (Interno alla Card) -->
+        <div class="flex justify-center">
+            <button id="lang-toggle" class="text-xs font-bold uppercase tracking-wider text-brand-accent dark:text-brandDark-accent bg-brand-bg dark:bg-brandDark-bg px-3 py-1 rounded-full border border-brand-border dark:border-brandDark-border hover:opacity-80 transition">
+                Switch to English
+            </button>
+        </div>
+
+        <!-- Contenuto Testuale (Gestito via JS per la lingua) -->
+        <div class="space-y-3">
+            <h1 id="donate-title" class="text-2xl sm:text-3xl font-serif font-bold tracking-tight">Supporta il Progetto</h1>
+            <p id="donate-desc" class="text-sm text-brand-secondary dark:text-brandDark-secondary leading-relaxed">
+                Pizza Alchemy è sviluppata con passione, senza pubblicità invasive. Se l'app ti è stata utile per sfornare un ottimo impasto, offrimi un trancio di margherita!
+            </p>
+        </div>
+
+        <!-- Area Bottone PayPal -->
+        <div class="pt-2 flex flex-col items-center space-y-3">
+            <a id="paypal-button" href="#" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-brand-accent text-brand-onAccent dark:bg-brandDark-accent dark:text-brandDark-onAccent py-3.5 px-6 rounded-full font-bold hover:opacity-90 transition transform hover:scale-[1.02] shadow-md text-base">
+                <span id="btn-text">Supporta con PayPal</span>
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                    <path d="M20.06 7.64c-.38-2.19-2.06-3.81-4.78-3.81H7.81c-.55 0-1 .41-1.07.95L3.38 20.31c-.05.33.2.62.53.62h4.52l1.2-7.55c.03-.23.23-.4.47-.4h2.13c3.08 0 5.49-1.25 6.19-4.83.27-1.39.06-2.58-.76-3.51M13.2 10.13h-2.2l.66-4.13h1.54c1.11 0 1.9.46 2.05 1.44.13.88-.41 2.69-2.05 2.69z"/>
+                </svg>
+            </a>
+            
+            <!-- Nota di suggerimento per il messaggio su PayPal -->
+            <p id="donate-tip" class="text-[11px] text-brand-secondary dark:text-brandDark-secondary italic max-w-xs leading-tight">
+                Ricordati di aggiungere un messaggio (es. il tuo nome o un saluto) durante la transazione per un ringraziamento speciale!
+            </p>
+        </div>
+
+        <!-- Footer minimale con link di ritorno o chiusura finestra -->
+        <div class="pt-4 border-t border-brand-border dark:border-brandDark-border text-xs text-brand-secondary dark:text-brandDark-secondary">
+            <p>© 2026 Pizza Alchemy.</p>
+        </div>
+
+    </main>
+
+    <script>
+        // --- 1. CONFIGURAZIONE PAYPAL ---
+        // Sostituisci qui con il tuo username PayPal reale
+        const PAYPAL_USERNAME = "YOUR_PAYPAL_USERNAME"; 
+        const DEFAULT_AMOUNT = "5"; // Inserisci "" se vuoi che l'utente scelga l'importo liberamente
+        const CURRENCY = "EUR";
+
+        // Generazione dinamica del link
+        const paypalBtn = document.getElementById('paypal-button');
+        if (PAYPAL_USERNAME && PAYPAL_USERNAME !== "YOUR_PAYPAL_USERNAME") {
+            let url = `https://paypal.me/${PAYPAL_USERNAME.trim()}`;
+            if (DEFAULT_AMOUNT.trim() !== "") {
+                url += `/${DEFAULT_AMOUNT.trim()}${CURRENCY.trim()}`;
+            }
+            paypalBtn.href = url;
+        }
+
+        // --- 2. SISTEMA DI TRADUZIONE ---
+        let currentLang = 'it';
+        const langToggle = document.getElementById('lang-toggle');
+        
+        const content = {
+            it: {
+                title: "Supporta il Progetto",
+                desc: "Pizza Alchemy è sviluppata con passione, senza pubblicità invasive e nel rispetto della tua privacy. Se l'app ti è stata utile per calcolare l'idratazione e sfornare un ottimo impasto, supporta lo sviluppo offrendomi un trancio di margherita!",
+                btn: "Supporta con PayPal",
+                tip: "Ricordati di aggiungere un messaggio (es. il tuo nome o un saluto) durante la transazione per un ringraziamento speciale!",
+                toggle: "Switch to English"
+            },
+            en: {
+                title: "Support the Project",
+                desc: "Pizza Alchemy is developed with passion, without invasive ads and fully respecting your privacy. If the app helped you balance your hydration and bake a great dough, support its development by buying me a slice of margherita!",
+                btn: "Support with PayPal",
+                tip: "Remember to add a message (e.g. your name or a greeting) during payment for a special thanks!",
+                toggle: "Cambia in Italiano"
+            }
+        };
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'it' ? 'en' : 'it';
+            
+            document.getElementById('donate-title').textContent = content[currentLang].title;
+            document.getElementById('donate-desc').textContent = content[currentLang].desc;
+            document.getElementById('btn-text').textContent = content[currentLang].btn;
+            document.getElementById('donate-tip').textContent = content[currentLang].tip;
+            langToggle.textContent = content[currentLang].toggle;
+        }
+
+        langToggle.addEventListener('click', toggleLanguage);
+    </script>
+</body>
+</html>
