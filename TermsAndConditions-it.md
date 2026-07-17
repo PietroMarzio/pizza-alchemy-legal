@@ -1,0 +1,138 @@
+**Termini e Condizioni**
+
+I presenti termini e condizioni si applicano all'applicazione Pizza Alchemy per dispositivi mobili, insieme a tutti i servizi correlati gestiti da Pietro Marzio (collettivamente, l' "Applicazione")[cite: 2]. Pietro Marzio è di seguito denominato il "Fornitore del Servizio"[cite: 2].
+
+Scaricando o utilizzando l'Applicazione, l'utente accetta i presenti Termini e Condizioni[cite: 2]. Si consiglia di leggerli attentamente prima dell'uso[cite: 2].
+
+**Licenza d'uso dell'Applicazione**
+
+Soggetto al rispetto dei presenti Termini, il Fornitore del Servizio concede all'utente una licenza limitata, non esclusiva, non trasferibile e revocabile per installare e utilizzare l'Applicazione su un dispositivo mobile per scopi personali o commerciali interni[cite: 2]. Non è consentito riprodurre, distribuire, modificare, creare opere derivate, decodificare, decompilare o disassemblare l'Applicazione, se non nella misura espressamente consentita dalla legge applicabile[cite: 2].
+
+**Proprietà Intellettuale**
+
+Il Fornitore del Servizio conserva tutti i diritti di proprietà intellettuale sull'Applicazione, inclusi il codice, il design, i marchi, i marchi di servizio, i nomi commerciali, i loghi e il branding (la "PI")[cite: 2]. Nulla nei presenti Termini concede all'utente una licenza o il diritto di utilizzare i marchi, i loghi o il branding del Fornitore del Servizio per qualsiasi scopo[cite: 2]. L'utente accetta di non rimuovere, alterare o nascondere alcun avviso di copyright, marchio o altri diritti di proprietà visualizzati nell'Applicazione[cite: 2].
+
+**Risoluzione**
+
+Il Fornitore del Servizio può sospendere l'accesso dell'utente all'Applicazione o ai servizi in caso di violazione materiale dei presenti Termini[cite: 2]. Il Fornitore del Servizio fornirà una notifica scritta della violazione e, laddove sia possibile rimediarvi, l'utente avrà 14 giorni dal ricevimento della notifica per sanare la violazione[cite: 2]. Se l'utente non rimedierà entro tale periodo, il Fornitore del Servizio potrà interrompere l'accesso[cite: 2].
+
+Il Fornitore del Servizio può sospendere o interrompere l'accesso immediatamente e senza preavviso in caso di violazione delle leggi applicabili, infrazione dei diritti di proprietà intellettuale o attività che potrebbero causare danni ad altri utenti o al Fornitore del Servizio[cite: 2].
+
+Al momento della risoluzione, il diritto dell'utente di utilizzare l'Applicazione cesserà e l'utente dovrà eliminare tutte le copie dai propri dispositivi[cite: 2].
+
+Accedendo e utilizzando l'Applicazione, l'utente dichiara che l'uso è legalmente consentito nella propria giurisdizione[cite: 2]. L'utente deve avere almeno 16 anni (l'età del consenso digitale nella propria giurisdizione) per utilizzare l'Applicazione[cite: 2]. Se l'utente ha un'età inferiore ai 16 anni, un genitore o un tutore legale deve verificare e accettare i presenti Termini per suo conto[cite: 2].
+
+È severamente vietata la copia o la modifica non autorizzata dell'Applicazione, di qualsiasi sua parte o dei marchi del Fornitore del Servizio[cite: 2]. Non è consentito alcun tentativo di estrarre il codice sorgente dell'Applicazione, tradurre l'Applicazione in altre lingue o creare versioni derivate[cite: 2]. Tutti i marchi, i diritti d'autore, i diritti sui database e gli altri diritti di proprietà intellettuale relativi all'Applicazione rimangono di proprietà del Fornitore del Servizio[cite: 2].
+
+**Contenuti Generati dagli Utenti e Uso Consentito**
+
+Se l'Applicazione consente agli utenti di pubblicare, condividere o caricare contenuti, l'utente accetta di non pubblicare contenuti che[cite: 2]:
+
+*   Siano illegali o violino i diritti di proprietà intellettuale di terzi (copyright, marchi, brevetti)[cite: 2].
+*   Siano offensivi, minacciosi, molesti, diffamatori o incitino all'odio[cite: 2].
+*   Contengano discriminazioni o incitamenti alla violenza o ad attività illegali[cite: 2].
+*   Siano spam, phishing o contengano malware[cite: 2].
+*   Violino i diritti alla privacy o alla protezione dei dati personali altrui[cite: 2].
+*   Siano fuorvianti, falsi o ingannevoli[cite: 2].
+*   Contengano violenza esplicita o contenuti sessuali (a meno che non siano adeguatamente limitati per età)[cite: 2].
+
+Il Fornitore del Servizio si riserva il diritto di[cite: 2]:
+
+*   Rimuovere o disabilitare l'accesso ai contenuti che violano queste linee guida[cite: 2].
+*   Sospendere o chiudere gli account degli utenti che violano ripetutamente queste linee guida[cite: 2].
+*   Collaborare con le forze dell'ordine in caso di segnalazione di contenuti illegali[cite: 2].
+*   Moderare, filtrare o nascondere i contenuti che violano i presenti Termini, la legge applicabile o le linee guida sopra indicate[cite: 2].
+
+I contenuti inviati tramite l'Applicazione possono essere visibili ad altri utenti o al pubblico, a seconda del funzionamento dell'Applicazione stessa[cite: 2].
+
+Se ritieni che un contenuto violi i presenti Termini, infranga i tuoi diritti o sia illegale, puoi segnalarlo al Fornitore del Servizio all'indirizzo pizzaalchemy.app@gmail.com[cite: 2]. La segnalazione deve includere informazioni sufficienti a identificare il contenuto, valutare il reclamo e contattarti per eventuali approfondimenti[cite: 2].
+
+Laddove l'Applicazione offra tali funzionalità, è anche possibile segnalare contenuti, bloccare altri utenti o silenziare le notifiche direttamente tramite l'interfaccia dell'Applicazione[cite: 2]. Il Fornitore del Servizio esaminerà le segnalazioni in-app applicando gli stessi standard descritti nei presenti Termini[cite: 2].
+
+Il Fornitore del Servizio esaminerà i contenuti segnalati, richiederà informazioni aggiuntive ove necessario, rimuoverà o limiterà l'accesso ai contenuti e prenderà provvedimenti contro l'account responsabile[cite: 2]. Gli utenti interessati dalle decisioni di moderazione possono contattare il Fornitore del Servizio all'indirizzo pizzaalchemy.app@gmail.com per richiedere un'ulteriore revisione[cite: 2]. Il Fornitore risponderà ai ricorsi entro un periodo ragionevole fornendo le motivazioni della decisione, in conformità con la legge applicabile[cite: 2].
+
+Inviando Contenuti Generati dall'Utente, concedi al Fornitore del Servizio una licenza non esclusiva, mondiale, esente da royalty per utilizzare, riprodurre, distribuire, preparare opere derivate, visualizzare ed eseguire tali contenuti in relazione all'Applicazione e all'attività del Fornitore[cite: 2]. Questa licenza non concede al Fornitore del Servizio il diritto di vendere o concedere in sublicenza i tuoi contenuti a terzi indipendentemente dall'Applicazione[cite: 2]. Dichiari e garantisci di possedere o controllare tutti i diritti sui contenuti pubblicati e che l'uso degli stessi non viola i presenti Termini o la legge applicabile[cite: 2].
+
+I tuoi contenuti possono includere dati personali[cite: 2]. Il trattamento dei dati personali relativi ai Contenuti Generati dall'Utente è regolato dall'Informativa sulla Privacy[cite: 2]. Non pubblicare dati personali di altri senza il loro consenso[cite: 2].
+
+Il Fornitore del Servizio si impegna a garantire che l'Applicazione sia il più utile ed efficiente possibile[cite: 2]. Pertanto, si riserva il diritto di modificare l'Applicazione o di richiedere un pagamento per i propri servizi in qualsiasi momento e per qualsiasi motivo[cite: 2]. Il Fornitore del Servizio assicura che qualsiasi costo per l'Applicazione o i suoi servizi sarà chiaramente comunicato[cite: 2].
+
+L'Applicazione memorizza ed elabora i dati personali forniti dall'utente per erogare il Servizio[cite: 2]. È responsabilità dell'utente mantenere la sicurezza del proprio dispositivo mobile e dell'accesso all'Applicazione[cite: 2].
+
+Il Fornitore del Servizio sconsiglia vivamente di effettuare il jailbreak o il root del dispositivo mobile, operazione che consiste nel rimuovere le restrizioni software imposte dal sistema operativo ufficiale del dispositivo[cite: 2]. Tali azioni potrebbero esporre il dispositivo a malware, virus, compromettere le funzionalità di sicurezza e causare il malfunzionamento parziale o totale dell'Applicazione[cite: 2].
+
+Servizi di Terze Parti utilizzati dall'app:
+
+*   [Google Play Services](https://policies.google.com/terms)[cite: 2]
+
+Si prega di notare che il Fornitore del Servizio non si assume alcuna responsabilità per determinati aspetti[cite: 2]. Alcune funzioni richiedono una connessione internet attiva (Wi-Fi o rete dati)[cite: 2]. Il Fornitore non può essere ritenuto responsabile se l'Applicazione non funziona a pieno regime a causa della mancanza di connessione o se hai esaurito il traffico dati[cite: 2].
+
+Se utilizzi l'Applicazione al di fuori di un'area Wi-Fi, tieni presente che si applicano comunque i termini del contratto con il tuo operatore di rete mobile[cite: 2]. Di conseguenza, potrebbero essere addebitati i costi di connessione dati o altri costi di terze parti[cite: 2]. Utilizzando l'Applicazione, accetti la responsabilità di tali addebiti, inclusi i costi di roaming se utilizzi l'Applicazione fuori dal tuo territorio nazionale senza disattivare il roaming dati[cite: 2]. Se non sei il titolare del contratto del dispositivo utilizzato, presumiamo che tu abbia ottenuto il permesso dal pagatore della bolletta[cite: 2].
+
+Allo stesso modo, il Fornitore del Servizio non può sempre assumersi la responsabilità dell'utilizzo dell'Applicazione[cite: 2]. Ad esempio, è tua responsabilità assicurarti che il dispositivo rimanga carico[cite: 2]. Se il dispositivo si scarica e non puoi accedere al Servizio, il Fornitore non può essere ritenuto responsabile[cite: 2].
+
+Nulla nei presenti Termini limiterà i diritti dell'utente ai sensi delle leggi a tutela dei consumatori applicabili che non possono essere legalmente esclusi[cite: 2].
+
+**Limitazione di Responsabilità**
+
+Nella misura massima consentita dalla legge applicabile, il Fornitore del Servizio non sarà responsabile per eventuali danni indiretti, incidentali, speciali, consequenziali o punitivi, inclusi, a titolo esemplificativo, perdita di profitti, perdita di dati o interruzione dell'attività, anche se informato della possibilità di tali danni[cite: 2].
+
+Tuttavia, il Fornitore del Servizio mantiene la piena responsabilità per[cite: 2]:
+
+*   Morte o lesioni personali causate da negligenza[cite: 2].
+*   Frode o dichiarazione fraudolenta[cite: 2].
+*   Qualsiasi altra responsabilità che non può essere esclusa o limitata ai sensi della legge applicabile[cite: 2].
+
+Nella misura massima consentita dalla legge, la responsabilità totale del Fornitore del Servizio per qualsiasi reclamo non supererà l'importo pagato dall'utente al Fornitore per l'Applicazione nei 12 mesi precedenti la richiesta, o l'importo minimo previsto dalla legge applicabile, a seconda di quale sia il maggiore[cite: 2]. Se l'Applicazione è fornita gratuitamente, la responsabilità del Fornitore del Servizio è limitata all'importo minimo consentito dalla legge applicabile[cite: 2].
+
+Il Fornitore del Servizio non si assume alcuna responsabilità per perdite, dirette o indirette, derivanti dall'affidamento su informazioni fornite da terzi tramite l'Applicazione o per imprecisioni nei contenuti forniti da terzi[cite: 2].
+
+**Manleva (Indennizzo)**
+
+Nella misura massima consentita dalla legge, l'utente accetta di indennizzare e tenere indenne il Fornitore del Servizio, le sue affiliate, funzionari, direttori, dipendenti e agenti da qualsiasi pretesa, responsabilità, danno, perdita e spesa, incluse le spese legali, derivanti da o direttamente correlate alla violazione dei presenti Termini o all'uso improprio intenzionale dell'Applicazione, inclusi i Contenuti Generati dall'Utente inviati in violazione dei presenti Termini[cite: 2].
+
+Tale indennizzo non si applica ai reclami derivanti da negligenza del Fornitore del Servizio, violazione dei presenti Termini o violazione della legge applicabile[cite: 2]. Nelle giurisdizioni in cui l'indennizzo del consumatore è limitato dalla legge, questa clausola sarà limitata nella misura massima consentita[cite: 2].
+
+Il Fornitore del Servizio potrebbe voler aggiornare l'Applicazione in futuro[cite: 2]. I requisiti del sistema operativo possono cambiare e sarà necessario scaricare gli aggiornamenti per continuare a utilizzare l'Applicazione[cite: 2]. Il Fornitore non garantisce che aggiornerà sempre l'Applicazione in modo che sia compatibile con la versione installata sul tuo dispositivo[cite: 2]. Accetti di scaricare gli aggiornamenti quando offerti; in caso contrario, il Fornitore potrebbe interrompere il supporto alle versioni precedenti[cite: 2]. Il Fornitore può anche decidere di interrompere la fornitura dell'Applicazione e può terminarne l'uso in qualsiasi momento senza preavviso[cite: 2]. Salvo diversa comunicazione, in caso di risoluzione: (a) i diritti e le licenze concessi all'utente cesseranno; (b) l'utente dovrà smettere di utilizzare l'Applicazione ed eliminarla dal dispositivo[cite: 2].
+
+**Legge Applicabile e Giurisdizione**
+
+I presenti Termini e Condizioni sono regolati dalle leggi della giurisdizione in cui è stabilito il Fornitore del Servizio, escluse le norme di conflitto di leggi, salvo il caso in cui le leggi inderogabili a tutela dei consumatori dispongano diversamente[cite: 2].
+
+Qualsiasi controversia derivante da o relativa ai presenti Termini sarà presentata dinanzi ai tribunali competenti ai sensi della legge applicabile[cite: 2]. Nulla in questa clausola limita i diritti dell'utente di presentare un reclamo dinanzi a un tribunali competenti ai sensi delle leggi inderogabili[cite: 2].
+
+**Conformità DSA (Digital Services Act)**
+
+Se l'Applicazione si configura come servizio intermediario ai sensi del Digital Services Act (Regolamento (UE) 2022/2065, "DSA"), si applicano le seguenti disposizioni aggiuntive[cite: 2].
+
+Punto di Contatto: Il Fornitore del Servizio mantiene un unico punto di contatto per la comunicazione diretta con le autorità dell'UE e i destinatari del servizio, raggiungibile all'indirizzo pizzaalchemy.app@gmail.com[cite: 2]. Se il Fornitore del Servizio è stabilito al di fuori dell'Unione Europea, è stato designato un rappresentante legale nell'UE in conformità con l'Articolo 13 del DSA[cite: 2].
+
+Moderazione dei Contenuti e Motivazione: Qualora il Fornitore del Servizio limiti l'accesso ai contenuti, sospenda o chiuda un account, o limiti in altro modo la disponibilità delle funzionalità dell'Applicazione, verrà fornita una motivazione chiara e specifica all'utente interessato[cite: 2]. La comunicazione includerà la natura della restrizione, la base legale o contrattuale della decisione e le informazioni sui meccanismi di ricorso disponibili, in conformità con l'Articolo 17 del DSA[cite: 2].
+
+Segnalazione e Azione: Gli utenti e i terzi possono inviare segnalazioni di contenuti presumibilmente illegali tramite i dettagli di contatto forniti nei presenti Termini[cite: 2]. Il Fornitore del Servizio elaborerà le segnalazioni tempestivamente, diligentemente e senza processi decisionali automatizzati laddove sia richiesto l'intervento umano[cite: 2]. Le segnalazioni riceveranno conferma elettronica e la decisione sarà comunicata senza indebito ritardo, in conformità con l'Articolo 16 del DSA[cite: 2].
+
+Risoluzione Extragiudiziale delle Controversie: Le controversie relative alle decisioni di moderazione dei contenuti, incluse le decisioni di limitare i contenuti o sospendere gli account, possono essere sottoposte a un organismo di risoluzione extragiudiziale delle controversie certificato ai sensi dell'Articolo 21 del DSA[cite: 2]. Il Fornitore del Servizio collaborerà con tali organismi in buona fede[cite: 2]. L'uso della risoluzione extragiudiziale non pregiudica il diritto di adire le vie legali ordinarie ai sensi della legge applicabile[cite: 2].
+
+Rapporti di Trasparenza: Il Fornitore del Servizio pubblica rapporti periodici di trasparenza sulle attività di moderazione dei contenuti, compreso il volume delle segnalazioni ricevute, le azioni intraprese e gli strumenti automatizzati utilizzati, in conformità con l'Articolo 24 del DSA[cite: 2]. I rapporti sono disponibili su richiesta all'indirizzo pizzaalchemy.app@gmail.com[cite: 2].
+
+Le presenti disposizioni DSA si applicano nella misura in cui l'Applicazione si qualifichi come servizio intermediario ai sensi del DSA e non sostituiscono né limitano i diritti o gli obblighi previsti dalle leggi vigenti in materia di tutela dei consumatori o dei dati personali[cite: 2].
+
+**Inapplicabilità Parziale (Scindibilità)**
+
+Qualora una qualsiasi disposizione dei presenti Termini e Condizioni sia ritenuta non valida, illegale o inapplicabile da un tribunale competente, tale disposizione sarà modificata nella misura minima necessaria per renderla valida e applicabile, e le restanti disposizioni rimarranno in vigore a tutti gli effetti[cite: 2].
+
+**Intero Accordo**
+
+I presenti Termini e Condizioni, insieme all'Informativa sulla Privacy, costituiscono l'intero accordo tra l'utente e il Fornitore del Servizio in merito all'uso dell'Applicazione, sostituendo qualsiasi accordo o intesa precedente[cite: 2].
+
+**Modifiche ai Presenti Termini e Condizioni**
+
+Il Fornitore del Servizio può aggiornare periodicamente i propri Termini e Condizioni[cite: 2]. Si consiglia pertanto di consultare regolarmente questa pagina per verificare eventuali modifiche[cite: 2]. Il Fornitore del Servizio informerà l'utente di eventuali modifiche pubblicando i nuovi Termini e Condizioni su questa pagina[cite: 2].
+
+Le versioni precedenti dei Termini e Condizioni saranno conservate e rese disponibili su richiesta contattando il Fornitore del Servizio all'indirizzo pizzaalchemy.app@gmail.com[cite: 2].
+
+I presenti termini e condizioni sono efficaci a partire dal 17-07-2026[cite: 2].
+
+**Contatti**
+
+In caso di domande o suggerimenti sui Termini e Condizioni, non esitare a contattare il Fornitore del Servizio all'indirizzo pizzaalchemy.app@gmail.com[cite: 2].

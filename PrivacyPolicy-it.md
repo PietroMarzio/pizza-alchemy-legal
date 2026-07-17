@@ -1,0 +1,107 @@
+**Informativa sulla Privacy**
+
+La presente informativa sulla privacy si applica all'applicazione Pizza Alchemy per dispositivi mobili, insieme a tutti i servizi correlati gestiti da Pietro Marzio (collettivamente, l' "Applicazione")[cite: 1]. Pietro Marzio è di seguito denominato il "Fornitore del Servizio"[cite: 1].
+
+**Raccolta e Utilizzo delle Informazioni**
+
+L'Applicazione raccoglie informazioni quando viene scaricata e utilizzata[cite: 1]. Tali informazioni possono includere dati quali[cite: 1]:
+
+*   L'indirizzo IP (Internet Protocol) del dispositivo[cite: 1].
+*   Le pagine dell'Applicazione visitate, l'ora e la data della visita, il tempo trascorso su tali pagine[cite: 1].
+*   Il tempo totale trascorso sull'Applicazione[cite: 1].
+*   Il sistema operativo mobile utilizzato[cite: 1].
+
+**Cookie e Tecnologie di Tracciamento**
+
+L'Applicazione o i suoi SDK di terze parti possono utilizzare cookie, SDK, pixel e tecnologie simili per supportare le funzionalità, l'analisi o l'erogazione del servizio[cite: 1]. Laddove richiesto dalla legge applicabile, il Fornitore del Servizio otterrà il consenso prima di utilizzare tecnologie di tracciamento non essenziali[cite: 1].
+
+**Informazioni sulla Posizione**
+
+L'Applicazione raccoglie la posizione del dispositivo per fornire funzionalità basate sulla geolocalizzazione, migliorare l'Applicazione e supportare i servizi correlati[cite: 1].
+
+*   Servizi di Geolocalizzazione: Il Fornitore del Servizio può utilizzare i dati di localizzazione per fornire funzionalità o contenuti personalizzati in base alla posizione[cite: 1].
+*   Analisi e Miglioramenti: I dati di localizzazione aggregati possono aiutare il Fornitore del Servizio a comprendere i modelli di utilizzo e migliorare le prestazioni[cite: 1].
+*   Servizi di Terze Parti: I dati di localizzazione possono essere condivisi con servizi di terze parti utilizzati per supportare le funzionalità dell'Applicazione, in conformità con la presente informativa sulla privacy e con la legge applicabile[cite: 1].
+
+**I Tuoi Diritti**
+
+Puoi richiedere l'accesso, la rettifica o la cancellazione dei tuoi dati personali in possesso del Fornitore del Servizio[cite: 1]. Per esercitare tali diritti, o per revocare il consenso laddove il trattamento si basi su di esso, è possibile contattare il Fornitore del Servizio all'indirizzo pizzaalchemy.app@gmail.com[cite: 1].
+
+**I Tuoi Diritti sulla Privacy in California (CCPA/CPRA)**
+
+Se risiedi in California, hai il diritto di sapere quali informazioni personali vengono raccolte, il diritto di cancellare i tuoi dati personali, il diritto di opporti alla vendita o alla condivisione delle informazioni personali e il diritto alla non discriminazione per l'esercizio di tali diritti[cite: 1]. Per esercitare i diritti CCPA/CPRA, contatta il Fornitore del Servizio all'indirizzo pizzaalchemy.app@gmail.com[cite: 1].
+
+Il Fornitore del Servizio può utilizzare le informazioni fornite per inviare comunicazioni importanti, notifiche obbligatorie e, laddove consentito dalla legge, comunicazioni di marketing[cite: 1].
+
+Per garantire una migliore esperienza d'uso dell'Applicazione, il Fornitore del Servizio potrebbe richiedere di fornire alcune informazioni di identificazione personale[cite: 1]. Le informazioni richieste dal Fornitore del Servizio saranno conservate e utilizzate come descritto nella presente informativa sulla privacy[cite: 1].
+
+**Accesso di Terze Parti**
+
+Solo dati aggregati e anonimizzati vengono periodicamente trasmessi a servizi esterni per aiutare il Fornitore del Servizio a migliorare l'Applicazione e il proprio servizio[cite: 1]. Il Fornitore del Servizio può condividere le tue informazioni con terze parti solo nei modi descritti nella presente informativa[cite: 1].
+
+**Trasferimenti Internazionali di Dati**
+
+Il Fornitore del Servizio o i suoi fornitori di servizi terzi possono trasferire i dati personali in paesi diversi da quello di residenza dell'utente, anche al di fuori dello Spazio Economico Europeo (SEE)[cite: 1]. Laddove la legge applicabile richieda garanzie per i trasferimenti internazionali, il Fornitore del Servizio utilizzerà meccanismi appropriati[cite: 1]:
+
+*   Clausole Contrattuali Standard (SCC) approvate dalla Commissione Europea[cite: 1].
+*   Decisioni di adeguatezza o altri meccanismi di trasferimento legalmente riconosciuti[cite: 1].
+*   Il tuo consenso, laddove richiesto e legalmente consentito[cite: 1].
+
+Le leggi sulla protezione dei dati in altri paesi potrebbero differire da quelle della tua giurisdizione[cite: 1]. Laddove richiesto dalla legge, il Fornitore del Servizio applicherà le tutele adeguate e otterrà il consenso necessario per il trasferimento[cite: 1].
+
+Si prega di notare che l'Applicazione utilizza servizi di terze parti che dispongono di una propria Informativa sulla Privacy per la gestione dei dati[cite: 1]. Di seguito sono riportati i link alle informative sulla privacy dei fornitori di servizi terzi utilizzati dall'Applicazione[cite: 1]:
+
+*   [Google Play Services](https://www.google.com/policies/privacy/)[cite: 1]
+
+Il Fornitore del Servizio può divulgare le informazioni fornite dall'utente e quelle raccolte automaticamente[cite: 1]:
+
+*   laddove richiesto dalla legge, ad esempio per conformarsi a una citazione in giudizio o a procedimenti legali simili[cite: 1];
+*   quando ritiene in buona fede che la divulgazione sia necessaria per proteggere i propri diritti, proteggere la sicurezza dell'utente o di altri, indagare su frodi o rispondere a una richiesta governativa[cite: 1];
+*   ai propri fornitori di servizi di fiducia che lavorano per conto del Fornitore, che non hanno un uso indipendente delle informazioni divulgate e che hanno accettato di rispettare le regole stabilite in questa informativa[cite: 1].
+
+**Diritto di Opt-Out (Rifiuto)**
+
+È possibile interrompere qualsiasi raccolta di informazioni da parte dell'Applicazione disinstallandola dal proprio dispositivo mobile[cite: 1]. La disinstallazione interromperà la raccolta di dati, ma non cancellerà automaticamente le informazioni precedentemente trasmesse al Fornitore del Servizio o a terze parti[cite: 1].
+
+Per richiedere la cancellazione dei propri dati personali, revocare il consenso o esercitare i propri diritti, contattare il Fornitore del Servizio all'indirizzo pizzaalchemy.app@gmail.com[cite: 1].
+
+**Politica di Conservazione dei Dati**
+
+Il Fornitore del Servizio conserva i dati personali in base alla necessità per gli scopi dichiarati[cite: 1]:
+
+*   Dati Forniti dall'Utente: Conservati per tutta la durata dell'utilizzo dell'Applicazione più i successivi 12 mesi, salvo diversa disposizione di legge[cite: 1].
+*   Dati Raccolti Automaticamente: Conservati per un massimo di 24 mesi dalla raccolta, salvo diversa necessità di conformità legale[cite: 1].
+*   Dati Aggregati e Anonimizzati: Conservati a tempo indeterminato in quanto non identificano più l'utente[cite: 1].
+*   Dati richiesti per conformità legale: Conservati per tutto il tempo richiesto dalla legge applicabile[cite: 1].
+
+L'utente può richiedere la cancellazione dei propri dati personali, fatte salve eventuali esigenze di conservazione legale[cite: 1]. Se si desidera che il Fornitore del Servizio cancelli i Dati Forniti dall'Utente tramite l'Applicazione, si prega di contattare pizzaalchemy.app@gmail.com[cite: 1]. Si prega di notare che alcuni dati forniti dall'utente potrebbero essere necessari per il corretto funzionamento dell'Applicazione[cite: 1].
+
+**Minori**
+
+L'Applicazione non è destinata a minori di 16 anni, o all'età minima superiore richiesta dalla legge applicabile[cite: 1]. Il Fornitore del Servizio non richiede consapevolmente dati a minori né commercializza l'Applicazione nei loro confronti[cite: 1].
+
+Laddove la legge applicabile richieda il consenso dei genitori o dei tutori, l'Applicazione non è destinata all'uso senza tale consenso[cite: 1]. Il Fornitore del Servizio non raccoglie consapevolmente informazioni di identificazione personale da minori di 16 anni in violazione delle leggi vigenti[cite: 1]. Nel caso in cui il Fornitore del Servizio scopra che un minore ha fornito dati personali, provvederà a cancellarli immediatamente dai propri server[cite: 1]. Se sei un genitore o un tutore e sei a conoscenza del fatto che tuo figlio ha fornito dati personali al Fornitore del Servizio, ti preghiamo di contattarci (pizzaalchemy.app@gmail.com) per consentirci di prendere le misure necessarie[cite: 1].
+
+**Sicurezza**
+
+Il Fornitore del Servizio si impegna a salvaguardare la riservatezza delle tue informazioni[cite: 1]. Vengono fornite tutele fisiche, elettroniche e procedurali per proteggere e mantenere le informazioni elaborate[cite: 1].
+
+**Notifica di Violazione dei Dati (Data Breach)**
+
+In caso di violazione dei dati che interessi i tuoi dati personali, il Fornitore del Servizio ti informerà in conformità con i requisiti legali applicabili, fornendo informazioni sulla natura della violazione e sui passaggi intrapresi per risolverla[cite: 1].
+
+**Modifiche**
+
+Il Fornitore del Servizio può aggiornare periodicamente la presente Informativa sulla Privacy[cite: 1]. Le modifiche sostanziali verranno comunicate pubblicando l'Informativa aggiornata con una nuova data di efficacia[cite: 1]. Ove richiesto dalla legge, verrà richiesto il tuo consenso prima che le modifiche diventino effettive[cite: 1].
+
+Le versioni precedenti della presente Informativa saranno conservate e rese disponibili su richiesta contattando il Fornitore del Servizio all'indirizzo pizzaalchemy.app@gmail.com[cite: 1].
+
+La presente informativa sulla privacy è efficace a partire dal 17-07-2026[cite: 1].
+
+**Il Tuo Consenso**
+
+Laddove il trattamento si basi sul consenso, fornisci tale consenso accettando espressamente la relativa funzionalità o azione[cite: 1]. Puoi revocare il consenso in qualsiasi momento senza pregiudicare il trattamento effettuato prima della revoca[cite: 1]. Il trattamento basato su altre basi giuridiche viene effettuato come descritto sopra[cite: 1].
+
+**Contatti**
+
+Per qualsiasi domanda sulla privacy durante l'utilizzo dell'Applicazione o sulle nostre pratiche, si prega di contattare il Fornitore del Servizio via email all'indirizzo pizzaalchemy.app@gmail.com[cite: 1].
