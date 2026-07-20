@@ -1,0 +1,7 @@
+{
+  "_comment": "Template for the force/suggested-update config (fase 26). Host this as app-version.json on the same GitHub Pages site as the legal docs, i.e. served at https://pietromarzio.github.io/pizza-alchemy-legal/app-version.json (see src/lib/appUpdate.ts UPDATE_CONFIG_URL). Update the two versions at each release.",
+  "minimumSupportedVersion": "1.0.0",
+  "latestVersion": "1.0.0",
+  "androidPackage": "com.anonymous.PizzaAlchemy",
+  "iosAppStoreId": ""
+}
