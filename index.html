@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Alchemy</title>
+    <!-- File di configurazione esterno -->
+    <script src="config.js"></script>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            text: '#2B2119',
+                            bg: '#FBF6EE',
+                            element: '#F3EBDD',
+                            selected: '#EADCC5',
+                            secondary: '#7A6A58',
+                            accent: '#C93A2B',
+                            onAccent: '#FFF8F0',
+                            accentSoft: '#F6DFD4',
+                            border: '#E3D6C2',
+                        },
+                        brandDark: {
+                            text: '#F5EDE2',
+                            bg: '#1A1512',
+                            element: '#282019',
+                            selected: '#3A2D21',
+                            secondary: '#B8A893',
+                            accent: '#E05A45',
+                            onAccent: '#FFF8F0',
+                            accentSoft: '#4A2A21',
+                            border: '#3D3225',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['ui-serif', 'Georgia', 'serif'],
+                        rounded: ['ui-rounded', 'SF Pro Rounded', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-brand-bg text-brand-text dark:bg-brandDark-bg dark:text-brandDark-text font-rounded antialiased">
+
+    <!-- Header -->
+    <header class="max-w-5xl mx-auto px-6 py-6 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <span class="text-3xl">🍕</span>
+            <span class="font-bold text-xl tracking-tight font-serif">Pizza Alchemy</span>
+        </div>
+        
+        <div class="flex items-center gap-3">
+            <!-- Language Switcher -->
+            <button id="lang-toggle" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-brand-element dark:bg-brandDark-element border border-brand-border dark:border-brandDark-border hover:opacity-80 transition">
+                EN
+            </button>
+            
+            <!-- Dark Mode Toggle -->
+            <button id="theme-toggle" class="p-2 rounded-lg bg-brand-element dark:bg-brandDark-element hover:opacity-80 transition">
+                <span id="theme-toggle-icon" class="text-sm">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-5xl mx-auto px-6 py-10 md:py-20 grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6 text-left">
+            <span data-i18n="heroBadge" class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-brand-accentSoft text-brand-accent dark:bg-brandDark-accentSoft dark:text-brandDark-accent">
+                L'arte napoletana incontra la scienza
+            </span>
+            <h1 data-i18n="heroTitle" class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight">
+                Calcola l'impasto perfetto, <span class="text-brand-accent dark:text-brandDark-accent">al milligrammo</span>.
+            </h1>
+            <p data-i18n="heroDesc" class="text-brand-secondary dark:text-brandDark-secondary text-base md:text-lg">
+                Pizza Alchemy è la tua guida scientifica per creare pizze leggendarie. Calcola l'idratazione ideale, scopri gli ingredienti di stagione della tua regione e sforna capolavori.
+            </p>
+            
+            <!-- Store Buttons -->
+            <div class="flex flex-wrap gap-4 pt-2">
+                <!-- App Store -->
+                <a href="#" class="flex flex-1 sm:flex-initial items-center justify-center gap-3 bg-brand-text text-brand-bg dark:bg-brandDark-text dark:text-brandDark-bg px-5 py-3 rounded-xl hover:scale-105 transition transform duration-200 shadow-md">
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-.96.04-2.13.64-2.82 1.45-.6.69-1.12 1.83-1 2.94.1.08.1.08.19.08.96 0 2.06-.59 2.64-1.41z"/>
+                    </svg>
+                    <div class="text-left">
+                        <p data-i18n="appStore" class="text-[10px] uppercase font-semibold opacity-80 leading-none">Scarica su</p>
+                        <p class="text-sm font-bold font-serif leading-tight">App Store</p>
+                    </div>
+                </a>
+
+                <!-- Google Play -->
+                <a href="#" class="flex flex-1 sm:flex-initial items-center justify-center gap-3 bg-brand-text text-brand-bg dark:bg-brandDark-text dark:text-brandDark-bg px-5 py-3 rounded-xl hover:scale-105 transition transform duration-200 shadow-md">
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                        <path d="M3.25 2.25c-.15 0-.29.04-.41.11l11.45 11.45 3.62-3.62L3.81 2.43c-.16-.09-.37-.15-.56-.15m15.5 8.78l-3.28 3.28 3.28 3.28c.45-.26.75-.75.75-1.3V12.33c0-.55-.3-1.04-.75-1.3M3.81 21.57l14.07-7.77-3.62-3.62L2.84 21.64c.12.07.26.11.41.11.19 0 .4-.06.56-.18M2.25 3.32v17.36c0 .42.17.8.46 1.07l10.22-10.22L2.71 2.25c-.29.27-.46.65-.46 1.07z"/>
+                    </svg>
+                    <div class="text-left">
+                        <p data-i18n="playStore" class="text-[10px] uppercase font-semibold opacity-80 leading-none">Disponibile su</p>
+                        <p class="text-sm font-bold font-serif leading-tight">Google Play</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Phone Mockup: Interactive Pizza Profiler -->
+        <div class="relative flex justify-center w-full">
+            <div class="absolute w-80 h-80 rounded-full bg-brand-accentSoft text-brand-accent dark:bg-brandDark-accentSoft filter blur-3xl opacity-40 -z-10 animate-pulse"></div>
+            
+            <div class="w-full max-w-[310px] sm:max-w-[350px] bg-brand-element dark:bg-brandDark-element rounded-[42px] p-5 border-[6px] border-brand-border dark:border-brandDark-border shadow-2xl relative overflow-hidden transition-all duration-300">
+                <div class="w-28 h-4.5 bg-brand-text dark:bg-brandDark-text mx-auto rounded-full mb-5"></div>
+                
+                <!-- Mockup Screen Content -->
+                <div class="space-y-5">
+                    <div class="text-center">
+                        <span class="text-xs font-bold tracking-wider text-brand-accent dark:text-brandDark-accent">PIZZA ALCHEMY LAB</span>
+                        <h3 data-i18n="mockupTitle" class="font-serif font-bold text-xl mt-1">Profili d'Impasto</h3>
+                        <p data-i18n="mockupSub" class="text-[11px] text-brand-secondary dark:text-brandDark-secondary">Tocca uno stile per vedere i parametri</p>
+                    </div>
+
+                    <!-- Style Selector Tabs -->
+                    <div class="grid grid-cols-3 gap-1 bg-brand-bg dark:bg-brandDark-bg p-1 rounded-xl border border-brand-border dark:border-brandDark-border text-xs font-bold text-center">
+                        <button id="btn-napoletana" class="py-1.5 rounded-lg bg-brand-selected dark:bg-brandDark-selected text-brand-accent dark:text-brandDark-accent transition">Napoli</button>
+                        <button id="btn-teglia" class="py-1.5 rounded-lg hover:bg-brand-selected/50 dark:hover:bg-brandDark-selected/50 transition">Teglia</button>
+                        <button id="btn-ruota" class="py-1.5 rounded-lg hover:bg-brand-selected/50 dark:hover:bg-brandDark-selected/50 transition">Ruota</button>
+                    </div>
+
+                    <!-- Profile Specs Card -->
+                    <div class="bg-brand-bg dark:bg-brandDark-bg p-4 rounded-2xl border border-brand-border dark:border-brandDark-border space-y-4">
+                        <div>
+                            <div class="flex justify-between text-xs sm:text-sm">
+                                <span data-i18n="paramHydration" class="text-brand-secondary dark:text-brandDark-secondary">Idratazione</span>
+                                <span id="spec-hyd" class="font-bold text-brand-accent dark:text-brandDark-accent">65%</span>
+                            </div>
+                            <div class="w-full bg-brand-element dark:bg-brandDark-element h-2 rounded-full mt-2 overflow-hidden">
+                                <div id="bar-hyd" class="bg-brand-accent dark:bg-brandDark-accent h-2 rounded-full transition-all duration-500" style="width: 65%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between text-xs sm:text-sm border-t border-brand-border dark:border-brandDark-border pt-3">
+                            <span data-i18n="paramLeavening" class="text-brand-secondary dark:text-brandDark-secondary">Lievitazione</span>
+                            <span id="spec-leavening" class="font-bold">24 ore</span>
+                        </div>
+
+                        <div class="flex justify-between text-xs sm:text-sm border-t border-brand-border dark:border-brandDark-border pt-3">
+                            <span data-i18n="paramTemp" class="text-brand-secondary dark:text-brandDark-secondary">Temperatura Forno</span>
+                            <span id="spec-temp" class="font-bold">450°C</span>
+                        </div>
+                    </div>
+
+                    <!-- Alchemist Tip -->
+                    <div class="bg-brand-accentSoft dark:bg-brandDark-accentSoft p-4 rounded-2xl text-[12px] sm:text-xs leading-relaxed">
+                        <span data-i18n="paramNote" class="font-bold block text-brand-accent dark:text-brandDark-accent mb-1">Nota dell'Alchimista</span>
+                        <p id="spec-note" data-i18n="noteNapoletana">Richiede temperature altissime (430-480°C) e tempi rapidi di cottura (60-90 secondi). Impasto morbidissimo ed elastico.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="max-w-5xl mx-auto px-6 py-16 border-t border-brand-border dark:border-brandDark-border">
+        <h2 data-i18n="featuresTitle" class="text-3xl font-serif font-bold text-center mb-12">Cosa troverai dentro l'App</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-brand-element dark:bg-brandDark-element p-6 rounded-3xl border border-brand-border dark:border-brandDark-border">
+                <span class="text-3xl block mb-4">⚖️</span>
+                <h3 data-i18n="feat1Title" class="font-bold text-lg mb-2 font-serif">Calcolatore Avanzato</h3>
+                <p data-i18n="feat1Desc" class="text-sm text-brand-secondary dark:text-brandDark-secondary">Trova il bilanciamento millimetrico tra acqua, farina e lievito in base al tempo di lievitazione e alla temperatura della tua stanza.</p>
+            </div>
+            <div class="bg-brand-element dark:bg-brandDark-element p-6 rounded-3xl border border-brand-border dark:border-brandDark-border">
+                <span class="text-3xl block mb-4">🌿</span>
+                <h3 data-i18n="feat2Title" class="font-bold text-lg mb-2 font-serif">Ingredienti Locali</h3>
+                <p data-i18n="feat2Desc" class="text-sm text-brand-secondary dark:text-brandDark-secondary">Suggerimenti intelligenti basati sulla tua regione. Sostieni la biodiversità e usa ingredienti sempre freschi.</p>
+            </div>
+            <div class="bg-brand-element dark:bg-brandDark-element p-6 rounded-3xl border border-brand-border dark:border-brandDark-border">
+                <span class="text-3xl block mb-4">🔥</span>
+                <h3 data-i18n="feat3Title" class="font-bold text-lg mb-2 font-serif">Diario dell'Alchimista</h3>
+                <p data-i18n="feat3Desc" class="text-sm text-brand-secondary dark:text-brandDark-secondary">Salva le tue combinazioni, tieni traccia dei risultati e perfeziona la tua tecnica sfornata dopo sfornata.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="max-w-4xl mx-auto px-6 py-12 border-t border-brand-border dark:border-brandDark-border">
+        <div class="bg-brand-element dark:bg-brandDark-element p-8 md:p-12 rounded-[40px] border border-brand-border dark:border-brandDark-border grid md:grid-cols-3 gap-8 items-center">
+            
+            <!-- Left visually appealing Badge/Avatar placeholder -->
+            <div class="flex flex-col items-center text-center space-y-3">
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-brand-accentSoft dark:bg-brandDark-accentSoft flex items-center justify-center border-4 border-brand-accent dark:border-brandDark-accent shadow-inner">
+                    <span class="text-4xl sm:text-5xl">👨‍💻</span>
+                </div>
+                <div>
+                    <h4 class="font-serif font-bold text-lg">Pietro</h4>
+                </div>
+            </div>
+			
+            <!-- Right: The Narrative -->
+            <div class="md:col-span-2 space-y-4 text-left">
+                <span data-i18n="aboutSub" class="text-xs font-bold uppercase tracking-wider text-brand-accent dark:text-brandDark-accent">Dietro le quinte</span>
+                <h2 data-i18n="aboutTitle" class="text-2xl md:text-3xl font-serif font-bold leading-tight">Chi c'è dietro Pizza Alchemy?</h2>
+                <p id="about-desc" data-i18n="aboutDesc" class="text-sm md:text-base text-brand-secondary dark:text-brandDark-secondary leading-relaxed font-light italic">
+                    <!-- Injected via JS -->
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Support and Contact Section -->
+    <section class="max-w-4xl mx-auto px-6 py-12">
+        <div class="grid md:grid-cols-2 gap-8">
+            
+            <!-- Colonna Sinistra: PayPal -->
+            <div class="bg-brand-accentSoft dark:bg-brandDark-accentSoft p-8 rounded-3xl border border-brand-accent/20 dark:border-brandDark-accent/20 flex flex-col items-center justify-between text-center space-y-6">
+                <div class="space-y-4">
+                    <span class="text-4xl">☕</span>
+                    <h2 data-i18n="supportTitle" class="text-2xl font-serif font-bold">Supporta il Progetto</h2>
+                    <p data-i18n="supportDesc" class="text-sm text-brand-secondary dark:text-brandDark-secondary">
+                        Pizza Alchemy è sviluppata con passione, senza pubblicità invasive. Se l'app ti è stata utile, offrimi un trancio di margherita!
+                    </p>
+                </div>
+                
+                <div class="flex flex-col items-center w-full">
+                    <a id="paypal-link" href="#" target="_blank" class="inline-flex items-center gap-2 bg-brand-accent text-brand-onAccent dark:bg-brandDark-accent dark:text-brandDark-onAccent px-6 py-3 rounded-full font-bold hover:opacity-90 transition transform hover:scale-105 shadow-md">
+                        <span data-i18n="supportBtn">Supporta con PayPal</span>
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                            <path d="M20.06 7.64c-.38-2.19-2.06-3.81-4.78-3.81H7.81c-.55 0-1 .41-1.07.95L3.38 20.31c-.05.33.2.62.53.62h4.52l1.2-7.55c.03-.23.23-.4.47-.4h2.13c3.08 0 5.49-1.25 6.19-4.83.27-1.39.06-2.58-.76-3.51M13.2 10.13h-2.2l.66-4.13h1.54c1.11 0 1.9.46 2.05 1.44.13.88-.41 2.69-2.05 2.69z"/>
+                        </svg>
+                    </a>
+                    <p data-i18n="supportTip" class="text-[11px] text-brand-secondary dark:text-brandDark-secondary mt-3 italic max-w-xs text-center leading-tight">
+                        Ricordati di aggiungere un messaggio (es. il tuo nome o un saluto) durante la transazione per un ringraziamento speciale!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Colonna Destra: Email (Contatti) -->
+            <div class="bg-brand-element dark:bg-brandDark-element p-8 rounded-3xl border border-brand-border dark:border-brandDark-border flex flex-col items-center justify-between text-center space-y-6">
+                <div class="space-y-4">
+                    <span class="text-4xl">✉️</span>
+                    <h2 data-i18n="contactTitle" class="text-2xl font-serif font-bold">Hai domande?</h2>
+                    <p data-i18n="contactDesc" class="text-sm text-brand-secondary dark:text-brandDark-secondary">
+                        Segnalazioni di bug, idee per nuove funzionalità o vuoi semplicemente condividere la foto della tua ultima pizza? Scrivici un'email!
+                    </p>
+                </div>
+                
+                <div class="flex flex-col items-center w-full">
+                    <a id="email-link" href="#" class="inline-flex items-center gap-2 bg-brand-text text-brand-bg dark:bg-brandDark-text dark:text-brandDark-bg px-6 py-3 rounded-full font-bold hover:opacity-90 transition transform hover:scale-105 shadow-md">
+                        <span data-i18n="contactBtn">Scrivici un'email</span>
+                        <svg class="w-4 h-4 fill-none stroke-current" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                        </svg>
+                    </a>
+                    <p data-i18n="contactTip" class="text-[11px] text-brand-secondary dark:text-brandDark-secondary mt-3 italic max-w-xs text-center leading-tight">
+                        Ti risponderemo appena sfornato il prossimo impasto!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="max-w-5xl mx-auto px-6 py-8 border-t border-brand-border dark:border-brandDark-border text-center text-xs text-brand-secondary dark:text-brandDark-secondary space-y-2">
+        <p data-i18n="footerText">© 2026 Pizza Alchemy. Fatto con ❤️ e passione per l'impasto perfetto.</p>
+        <p>
+            <a href="/privacy.html" class="hover:underline text-brand-accent dark:text-brandDark-accent font-semibold" data-i18n="privacyLink">Informativa sulla Privacy</a>
+        </p>
+        <p data-i18n="footerSub">Le donazioni aiutano a mantenere attivi i server e a finanziare lo sviluppo dell'app.</p>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // --- 1. LOCALIZATION SYSTEM (IT / EN) ---
+        let currentLang = 'it';
+        
+        const translations = {
+            it: {
+                heroBadge: "L'arte napoletana incontra la scienza",
+                heroTitle: "Calcola l'impasto perfetto, <span class=\"text-brand-accent dark:text-brandDark-accent\">al milligrammo</span>.",
+                heroDesc: "Pizza Alchemy è la tua guida scientifica per creare pizze leggendarie. Calcola l'idratazione ideale, scopri gli ingredienti di stagione della tua regione e sforna capolavori.",
+                appStore: "Scarica su",
+                playStore: "Disponibile su",
+                mockupTitle: "Profili d'Impasto",
+                mockupSub: "Tocca uno stile per vedere i parametri",
+                paramHydration: "Idratazione",
+                paramLeavening: "Lievitazione",
+                paramTemp: "Temperatura Forno",
+                paramNote: "Nota dell'Alchimista",
+                noteNapoletana: "Richiede temperature altissime (430-480°C) e tempi rapidi di cottura (60-90 secondi). Impasto morbidissimo ed elastico.",
+                noteTeglia: "Alta idratazione (fino all'80%). Cottura in teglia a temperature domestiche. Risultato super alveolato, leggero e croccante.",
+                noteRuota: "La pizza tradizionale dei vicoli di Napoli. Sottilissima, larga oltre i bordi del piatto, idratazione contenuta per massima stendibilità.",
+                featuresTitle: "Cosa troverai dentro l'App",
+                feat1Title: "Calcolatore Avanzato",
+                feat1Desc: "Trova il bilanciamento millimetrico tra acqua, farina e lievito in base al tempo di lievitazione e alla temperatura della tua stanza.",
+                feat2Title: "Ingredienti Locali",
+                feat2Desc: "Suggerimenti intelligenti basati sulla tua regione. Sostieni la biodiversità e usa ingredienti sempre freschi.",
+                feat3Title: "Diario dell'Alchimista",
+                feat3Desc: "Salva le tue combinazioni, tieni traccia dei risultati e perfeziona la tua tecnica sfornata dopo sfornata.",
+                aboutRole: "L'Alchimista",
+                aboutSub: "Dietro le quinte",
+                aboutTitle: "Chi c'è dietro Pizza Alchemy?",
+                aboutDesc: "Sono un ingegnere con una passione viscerale per l'arte bianca. Con Pizza Alchemy ho voluto fondere il rigore delle formule matematiche con la poesia degli ingredienti stagionali e il rito di fare la pizza in casa. Perché anche l'equazione più perfetta, alla fine, ha bisogno di cuore e calore per prendere vita.",
+                supportTitle: "Supporta il Progetto",
+                supportDesc: "Pizza Alchemy è sviluppata con passione, senza pubblicità invasive. Se l'app ti è stata utile, offrimi un trancio di margherita!",
+                supportBtn: "Supporta con PayPal",
+                supportTip: "Ricordati di aggiungere un messaggio (es. il tuo nome o un saluto) durante la transazione per un ringraziamento speciale!",
+                contactTitle: "Hai domande?",
+                contactDesc: "Segnalazioni di bug, idee per nuove funzionalità o vuoi semplicemente condividere la foto della tua ultima pizza? Scrivici un'email!",
+                contactBtn: "Scrivici un'email",
+                contactTip: "Ti risponderemo appena sfornato il prossimo impasto!",
+                privacyLink: "Informativa sulla Privacy",
+                footerText: "© 2026 Pizza Alchemy. Fatto con ❤️ e passione per l'impasto perfetto.",
+                footerSub: "Le donazioni aiutano a mantenere attivi i server e a finanziare lo sviluppo dell'app."
+            },
+            en: {
+                heroBadge: "Neapolitan art meets science",
+                heroTitle: "Calculate the perfect dough, <span class=\"text-brand-accent dark:text-brandDark-accent\">down to the milligram</span>.",
+                heroDesc: "Pizza Alchemy is your scientific guide to creating legendary pizzas. Calculate the ideal hydration, discover seasonal ingredients for your region, and bake masterpieces.",
+                appStore: "Download on the",
+                playStore: "Get it on",
+                mockupTitle: "Dough Profiles",
+                mockupSub: "Tap a style to see the parameters",
+                paramHydration: "Hydration",
+                paramLeavening: "Leavening",
+                paramTemp: "Oven Temp",
+                paramNote: "Alchemist's Note",
+                noteNapoletana: "Requires extremely high temperatures (430-480°C) and fast bake times (60-90s). Extremely soft and elastic dough.",
+                noteTeglia: "High hydration (up to 80%). Baked in a tray at domestic oven temperatures. Super airy, light, and crispy result.",
+                noteRuota: "The traditional street pizza of Naples. Very thin, extending beyond the plate, lower hydration for maximum stretch.",
+                featuresTitle: "What you'll find inside the App",
+                feat1Title: "Advanced Calculator",
+                feat1Desc: "Find the millimetric balance between water, flour, and yeast based on proofing time and room temperature.",
+                feat2Title: "Local Ingredients",
+                feat2Desc: "Smart suggestions based on your region. Support biodiversity and always use fresh ingredients.",
+                feat3Title: "Alchemist's Diary",
+                feat3Desc: "Save your combinations, track your results, and perfect your technique bake after bake.",
+                aboutRole: "The Alchemist",
+                aboutSub: "Behind the scenes",
+                aboutTitle: "Who is behind Pizza Alchemy?",
+                aboutDesc: "I am an engineer with a visceral passion for baking. With Pizza Alchemy, I wanted to merge the rigor of mathematical formulas with the poetry of seasonal ingredients and the ritual of making pizza at home. Because even the most perfect equation, in the end, needs heart and heat to come alive.",
+                supportTitle: "Support the Project",
+                supportDesc: "Pizza Alchemy is developed with passion, without invasive ads. If the app helped you bake a great pizza, buy me a slice of margherita!",
+                supportBtn: "Support with PayPal",
+                supportTip: "Remember to add a message (e.g. your name or a greeting) during payment for a special thanks!",
+                contactTitle: "Have questions?",
+                contactDesc: "Bug reports, ideas for new features, or just want to share a photo of your latest bake? Send us an email!",
+                contactBtn: "Send us an email",
+                contactTip: "We'll get back to you as soon as the next dough is baked!",
+                privacyLink: "Privacy Policy",
+                footerText: "© 2026 Pizza Alchemy. Made with ❤️ and passion for the perfect dough.",
+                footerSub: "Donations help keep the servers running and fund the development of the app."
+            }
+        };
+
+        const langToggleBtn = document.getElementById('lang-toggle');
+
+        function updateLanguage() {
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                const translation = translations[currentLang][key];
+                if (translation) {
+                    if (key === 'heroTitle') {
+                        el.innerHTML = translation;
+                    } else if (key === 'aboutDesc') {
+                        // Per far risaltare lo stile "citazione/diario" nella bio, iniettiamo il testo
+                        el.innerHTML = `“${translation}”`;
+                    } else {
+                        el.textContent = translation;
+                    }
+                }
+            });
+            langToggleBtn.textContent = currentLang === 'it' ? 'EN' : 'IT';
+            
+            updateStyleSpecs(activeStyle);
+        }
+
+        langToggleBtn.addEventListener('click', () => {
+            currentLang = currentLang === 'it' ? 'en' : 'it';
+            updateLanguage();
+        });
+
+
+        // --- 2. DARK MODE TOGGLE ---
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeToggleIcon = document.getElementById('theme-toggle-icon');
+
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            themeToggleIcon.textContent = '☀️';
+        } else {
+            document.documentElement.classList.remove('dark');
+            themeToggleIcon.textContent = '🌙';
+        }
+
+        themeToggleBtn.addEventListener('click', function() {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('color-theme', 'light');
+                themeToggleIcon.textContent = '🌙';
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('color-theme', 'dark');
+                themeToggleIcon.textContent = '☀️';
+            }
+        });
+
+
+        // --- 3. INTERACTIVE PIZZA PROFILER ---
+        const stylesData = {
+            napoletana: {
+                hyd: '65%',
+                hydVal: 65,
+                leavening: { it: '24 ore', en: '24 hours' },
+                temp: '450°C',
+                noteKey: 'noteNapoletana'
+            },
+            teglia: {
+                hyd: '80%',
+                hydVal: 80,
+                leavening: { it: '48 ore (frigo)', en: '48 hours (fridge)' },
+                temp: '250°C',
+                noteKey: 'noteTeglia'
+            },
+            ruota: {
+                hyd: '58%',
+                hydVal: 58,
+                leavening: { it: '12 ore', en: '12 hours' },
+                temp: '430°C',
+                noteKey: 'noteRuota'
+            }
+        };
+
+        let activeStyle = 'napoletana';
+
+        const btnNapoletana = document.getElementById('btn-napoletana');
+        const btnTeglia = document.getElementById('btn-teglia');
+        const btnRuota = document.getElementById('btn-ruota');
+
+        const specHyd = document.getElementById('spec-hyd');
+        const barHyd = document.getElementById('bar-hyd');
+        const specLeavening = document.getElementById('spec-leavening');
+        const specTemp = document.getElementById('spec-temp');
+        const specNote = document.getElementById('spec-note');
+
+        function updateStyleSpecs(style) {
+            activeStyle = style;
+            const data = stylesData[style];
+            
+            specHyd.textContent = data.hyd;
+            barHyd.style.width = data.hydVal + '%';
+            specLeavening.textContent = data.leavening[currentLang];
+            specTemp.textContent = data.temp;
+            
+            specNote.textContent = translations[currentLang][data.noteKey];
+
+            [btnNapoletana, btnTeglia, btnRuota].forEach(btn => {
+                btn.className = "py-1.5 rounded-lg hover:bg-brand-selected/50 dark:hover:bg-brandDark-selected/50 transition";
+            });
+            const activeBtn = document.getElementById(`btn-${style}`);
+            activeBtn.className = "py-1.5 rounded-lg bg-brand-selected dark:bg-brandDark-selected text-brand-accent dark:text-brandDark-accent font-bold transition";
+        }
+
+        btnNapoletana.addEventListener('click', () => updateStyleSpecs('napoletana'));
+        btnTeglia.addEventListener('click', () => updateStyleSpecs('teglia'));
+        btnRuota.addEventListener('click', () => updateStyleSpecs('ruota'));
+
+        // Inizializza lingua e profilo
+        updateLanguage();
+
+        // --- 4. CONFIGURATION LOADER (PayPal & Email Setup) ---
+        // PayPal Loader
+        const paypalLink = document.getElementById('paypal-link');
+        if (paypalLink && typeof CONFIG !== 'undefined' && CONFIG.paypalUsername) {
+            let username = CONFIG.paypalUsername.trim();
+            let url = "";
+
+            if (username.startsWith('http://') || username.startsWith('https://')) {
+                url = username;
+            } else if (username !== "YOUR_PAYPAL_USERNAME" && username !== "") {
+                url = `https://paypal.me/${username}`;
+            }
+
+            if (url) {
+                const amount = (typeof CONFIG.defaultDonationAmount !== 'undefined') ? CONFIG.defaultDonationAmount.trim() : "";
+                const currency = (typeof CONFIG.currency !== 'undefined') ? CONFIG.currency.trim() : "";
+
+                if (amount !== "") {
+                    url += `/${amount}${currency}`;
+                }
+                
+                paypalLink.href = url;
+            }
+        }
+
+        // Email Loader (Sicuro contro lo spam-scraping)
+        const emailLink = document.getElementById('email-link');
+        if (emailLink && typeof CONFIG !== 'undefined' && CONFIG.supportEmail) {
+            const email = CONFIG.supportEmail.trim();
+            if (email && email !== "") {
+                const subject = encodeURIComponent("Pizza Alchemy - Feedback / Support");
+                emailLink.href = `mailto:${email}?subject=${subject}`;
+            }
+        }
+    </script>
+</body>
+</html>
