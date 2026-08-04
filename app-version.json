@@ -3,7 +3,7 @@
   "minimumSupportedVersion": "1.0.2",
   "latestVersion": "1.0.2",
   "android": {
-    "minimumSupportedVersion": "1.0.2",
+    "minimumSupportedVersion": "1.0.3",
     "latestVersion": "1.0.3"
   },
   "ios": {
