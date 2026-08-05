@@ -1,15 +1,6 @@
 {
-  "_comment": "Test forced update Android (fase 70)",
-  "minimumSupportedVersion": "1.0.2",
+  "minimumSupportedVersion": "1.0.0",
   "latestVersion": "1.0.2",
-  "android": {
-  "minimumSupportedVersion": "1.0.2",
-  "latestVersion": "1.0.2"
-},
-  "ios": {
-    "minimumSupportedVersion": "1.0.0",
-    "latestVersion": "1.0.2"
-  },
   "androidPackage": "com.pizzaalchemy.app",
   "iosAppStoreId": ""
 }
