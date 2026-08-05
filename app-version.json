@@ -2,7 +2,7 @@
   "minimumSupportedVersion": "1.0.0",
   "latestVersion": "1.0.3",
   "android": {
-    "minimumSupportedVersion": "1.0.3"
+    "minimumSupportedVersion": "1.0.4"
   },
   "androidPackage": "com.pizzaalchemy.app",
   "iosAppStoreId": ""
