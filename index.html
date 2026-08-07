@@ -61,13 +61,17 @@
         </div>
         
         <div class="flex items-center gap-3">
-            <!-- Language Switcher -->
-            <button id="lang-toggle" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-brand-element dark:bg-brandDark-element border border-brand-border dark:border-brandDark-border hover:opacity-80 transition">
-                EN
-            </button>
+            <!-- Language Selector (IT, EN, ES, FR, DE) -->
+            <select id="lang-select" class="px-2.5 py-1.5 rounded-lg text-xs font-bold bg-brand-element dark:bg-brandDark-element border border-brand-border dark:border-brandDark-border hover:opacity-80 transition cursor-pointer outline-none">
+                <option value="it">🇮🇹 IT</option>
+                <option value="en">🇬🇧 EN</option>
+                <option value="es">🇪🇸 ES</option>
+                <option value="fr">🇫🇷 FR</option>
+                <option value="de">🇩🇪 DE</option>
+            </select>
             
             <!-- Dark Mode Toggle -->
-            <button id="theme-toggle" class="p-2 rounded-lg bg-brand-element dark:bg-brandDark-element hover:opacity-80 transition">
+            <button id="theme-toggle" class="p-2 rounded-lg bg-brand-element dark:bg-brandDark-element hover:opacity-80 transition" aria-label="Toggle theme">
                 <span id="theme-toggle-icon" class="text-sm">🌙</span>
             </button>
         </div>
@@ -202,7 +206,7 @@
                     <h4 class="font-serif font-bold text-lg">Pietro</h4>
                 </div>
             </div>
-			
+            
             <!-- Right: The Narrative -->
             <div class="md:col-span-2 space-y-4 text-left">
                 <span data-i18n="aboutSub" class="text-xs font-bold uppercase tracking-wider text-brand-accent dark:text-brandDark-accent">Dietro le quinte</span>
@@ -279,7 +283,7 @@
 
     <!-- Interactive Scripts -->
     <script>
-        // --- 1. LOCALIZATION SYSTEM (IT / EN) ---
+        // --- 1. LOCALIZATION SYSTEM (IT / EN / ES / FR / DE) ---
         let currentLang = 'it';
         
         const translations = {
@@ -358,10 +362,124 @@
                 privacyLink: "Privacy Policy",
                 footerText: "© 2026 Pizza Alchemy. Made with ❤️ and passion for the perfect dough.",
                 footerSub: "Donations help keep the servers running and fund the development of the app."
+            },
+            es: {
+                heroBadge: "El arte napolitano se une a la ciencia",
+                heroTitle: "Calcula la masa perfecta, <span class=\"text-brand-accent dark:text-brandDark-accent\">al miligramo</span>.",
+                heroDesc: "Pizza Alchemy es tu guía científica para crear pizzas legendarias. Calcula la hidratación ideal, descubre ingredientes de temporada de tu región y hornea obras maestras.",
+                appStore: "Consíguelo en el",
+                playStore: "Disponible en",
+                mockupTitle: "Perfiles de Masa",
+                mockupSub: "Toca un estilo para ver los parámetros",
+                paramHydration: "Hidratación",
+                paramLeavening: "Fermentación",
+                paramTemp: "Temperatura Horno",
+                paramNote: "Nota del Alquimista",
+                noteNapoletana: "Requiere temperaturas muy altas (430-480°C) y tiempos rápidos de horneado (60-90 segundos). Masa muy suave y elástica.",
+                noteTeglia: "Alta hidratación (hasta el 80%). Horneado en bandeja a temperaturas domésticas. Resultado superalveolado, ligero y crujiente.",
+                noteRuota: "La pizza tradicional de las callejuelas de Nápoles. Muy fina, sobrepasa el plato, hidratación moderada para máxima extensibilidad.",
+                featuresTitle: "Qué encontrarás en la App",
+                feat1Title: "Calculadora Avanzada",
+                feat1Desc: "Encuentra el equilibrio milimétrico entre agua, harina y levadura según el tiempo de fermentación y la temperatura ambiente.",
+                feat2Title: "Ingredientes Locales",
+                feat2Desc: "Sugerencias inteligentes basadas en tu región. Apoya la biodiversidad y utiliza siempre ingredientes frescos.",
+                feat3Title: "Diario del Alquimista",
+                feat3Desc: "Guarda tus combinaciones, sigue tus resultados y perfecciona tu técnica horneada tras horneada.",
+                aboutRole: "El Alquimista",
+                aboutSub: "Entre bambalinas",
+                aboutTitle: "¿Quién está detrás de Pizza Alchemy?",
+                aboutDesc: "Soy un ingeniero con una pasión visceral por el arte de la panadería y la pizza. Con Pizza Alchemy quise fusionar el rigor de las fórmulas matemáticas con la poesía de los ingredientes de temporada y el ritual de hacer pizza en casa. Porque incluso la ecuación más perfecta, al final, necesita corazón y calor para cobrar vida.",
+                supportTitle: "Apoya el Proyecto",
+                supportDesc: "Pizza Alchemy está desarrollada con pasión, sin anuncios invasivos. Si la aplicación te ha sido útil, ¡invítame a una porción de margherita!",
+                supportBtn: "Apoyar con PayPal",
+                supportTip: "¡Recuerda añadir un mensaje (ej. tu nombre o un saludo) durante la transacción para un agradecimiento especial!",
+                contactTitle: "¿Tienes preguntas?",
+                contactDesc: "¿Reportes de errores, ideas para nuevas funciones o simplemente quieres compartir la foto de tu última pizza? ¡Escríbenos un correo!",
+                contactBtn: "Escríbenos un correo",
+                contactTip: "¡Te responderemos en cuanto salga del horno la siguiente masa!",
+                privacyLink: "Política de Privacidad",
+                footerText: "© 2026 Pizza Alchemy. Hecho con ❤️ y pasión por la masa perfecta.",
+                footerSub: "Las donaciones ayudan a mantener activos los servidores y a financiar el desarrollo de la aplicación."
+            },
+            fr: {
+                heroBadge: "L'art napolitain rencontre la science",
+                heroTitle: "Calculez la pâte parfaite, <span class=\"text-brand-accent dark:text-brandDark-accent\">au milligramme près</span>.",
+                heroDesc: "Pizza Alchemy est votre guide scientifique pour créer des pizzas légendaires. Calculez l'hydratation idéale, découvrez les ingrédients de saison de votre région et enfournez des chefs-d'œuvre.",
+                appStore: "Télécharger dans",
+                playStore: "Disponible sur",
+                mockupTitle: "Profils de Pâte",
+                mockupSub: "Touchez un style pour voir les paramètres",
+                paramHydration: "Hydratation",
+                paramLeavening: "Maturation",
+                paramTemp: "Température Four",
+                paramNote: "Note de l'Alchimiste",
+                noteNapoletana: "Nécessite des températures très élevées (430-480°C) et une cuisson rapide (60-90 secondes). Pâte très souple et élastique.",
+                noteTeglia: "Haute hydratation (jusqu'à 80%). Cuisson sur plaque à température domestique. Résultat très alvéolé, léger et croustillant.",
+                noteRuota: "La pizza traditionnelle des ruelles de Naples. Très fine, dépassant de l'assiette, hydratation modérée pour un étalage maximal.",
+                featuresTitle: "Ce que vous trouverez dans l'App",
+                feat1Title: "Calculateur Avancé",
+                feat1Desc: "Trouvez l'équilibre millimétrique entre eau, farine et levure selon le temps de maturation et la température ambiante.",
+                feat2Title: "Ingrédients Locaux",
+                feat2Desc: "Suggestions intelligentes basées sur votre région. Soutenez la biodiversité et utilisez toujours des ingrédients frais.",
+                feat3Title: "Journal de l'Alchimiste",
+                feat3Desc: "Sauvegardez vos combinaisons, suivez vos résultats et perfectionnez votre technique fournée après fournée.",
+                aboutRole: "L'Alchimiste",
+                aboutSub: "Coulisses",
+                aboutTitle: "Qui est derrière Pizza Alchemy ?",
+                aboutDesc: "Je suis un ingénieur passionné par l'art de la boulangerie et de la pizza. Avec Pizza Alchemy, j'ai voulu fusionner la rigueur des formules mathématiques avec la poésie des ingrédients de saison et le rituel de la pizza maison. Car même l'équation la plus parfaite a besoin de cœur et de chaleur pour prendre vie.",
+                supportTitle: "Soutenir le Projet",
+                supportDesc: "Pizza Alchemy est développée avec passion, sans publicités intrusives. Si l'application vous a été utile, offrez-moi une part de margherita !",
+                supportBtn: "Soutenir via PayPal",
+                supportTip: "N'oubliez pas d'ajouter un message (ex. votre nom ou un mot amical) lors de la transaction pour des remerciements personnalisés !",
+                contactTitle: "Des questions ?",
+                contactDesc: "Rapports de bugs, idées de fonctionnalités ou envie de partager la photo de votre dernière pizza ? Envoyez-nous un e-mail !",
+                contactBtn: "Envoyez-nous un e-mail",
+                contactTip: "Nous vous répondrons dès que la prochaine pâte sera sortie du four !",
+                privacyLink: "Politique de Confidentialité",
+                footerText: "© 2026 Pizza Alchemy. Fait avec ❤️ et passion pour la pâte parfaite.",
+                footerSub: "Les dons aident à maintenir les serveurs actifs et à financer le développement de l'application."
+            },
+            de: {
+                heroBadge: "Neapolitanische Kunst trifft auf Wissenschaft",
+                heroTitle: "Berechne den perfekten Teig, <span class=\"text-brand-accent dark:text-brandDark-accent\">auf das Milligramm genau</span>.",
+                heroDesc: "Pizza Alchemy ist dein wissenschaftlicher Leitfaden für legendäre Pizzas. Berechne die ideale Hydratation, entdecke regionale saisonale Zutaten und backe Meisterwerke.",
+                appStore: "Laden im",
+                playStore: "JETZT BEI",
+                mockupTitle: "Teigprofile",
+                mockupSub: "Tippe auf einen Stil, um die Parameter zu sehen",
+                paramHydration: "Hydratisierung",
+                paramLeavening: "Gärung",
+                paramTemp: "Ofentemperatur",
+                paramNote: "Hinweis des Alchemisten",
+                noteNapoletana: "Erfordert sehr hohe Temperaturen (430-480°C) und kurze Backzeiten (60-90 Sekunden). Sehr weicher und elastischer Teig.",
+                noteTeglia: "Hohe Hydratation (bis zu 80%). Backen im Blech bei Haushaltsofontemperaturen. Sehr luftiges, leichtes und knuspriges Ergebnis.",
+                noteRuota: "Die traditionelle Pizza aus den Gassen Neapels. Hauchdünn, über den Tellerrand ragend, moderate Hydratation für maximale Dehnbarkeit.",
+                featuresTitle: "Was dich in der App erwartet",
+                feat1Title: "Erweiterter Rechner",
+                feat1Desc: "Finde die exakte Balance zwischen Wasser, Mehl und Hefe basierend auf Gärzeit und Raumtemperatur.",
+                feat2Title: "Lokale Zutaten",
+                feat2Desc: "Intelligente Empfehlungen basierend auf deiner Region. Unterstütze die Artenvielfalt und verwende stets frische Zutaten.",
+                feat3Title: "Tagebuch des Alchemisten",
+                feat3Desc: "Speichere deine Kombinationen, verfolge deine Ergebnisse und perfektioniere deine Technik Backgang für Backgang.",
+                aboutRole: "Der Alchemist",
+                aboutSub: "Hinter den Kulissen",
+                aboutTitle: "Wer steckt hinter Pizza Alchemy?",
+                aboutDesc: "Ich bin ein Ingenieur mit einer tiefen Leidenschaft für die Backkunst. Mit Pizza Alchemy wollte ich die Präzision mathematischer Formeln mit der Poesie saisonaler Zutaten und dem Ritual des Pizzabackens zu Hause verbinden. Denn selbst die meisterhafteste Gleichung braucht am Ende Herz und Hitze, um zum Leben zu erwachen.",
+                supportTitle: "Unterstütze das Projekt",
+                supportDesc: "Pizza Alchemy wird mit Leidenschaft entwickelt, ohne störende Werbung. Wenn dir die App geholfen hat, spendiere mir ein Stück Margherita!",
+                supportBtn: "Unterstützen mit PayPal",
+                supportTip: "Denke daran, während der Transaktion eine Nachricht (z. B. deinen Namen oder einen Gruß) für ein besonderes Dankeschön hinzuzufügen!",
+                contactTitle: "Hast du Fragen?",
+                contactDesc: "Fehlerberichte, Ideen für neue Funktionen oder möchtest du einfach ein Foto deiner neuesten Pizza teilen? Schreib uns eine E-Mail!",
+                contactBtn: "Schreib uns eine E-Mail",
+                contactTip: "Wir antworten dir, sobald der nächste Teig gebacken ist!",
+                privacyLink: "Datenschutzerklärung",
+                footerText: "© 2026 Pizza Alchemy. Gemacht mit ❤️ und Leidenschaft für den perfekten Teig.",
+                footerSub: "Spenden helfen, die Server am Laufen zu halten und die Weiterentwicklung der App zu finanzieren."
             }
         };
 
-        const langToggleBtn = document.getElementById('lang-toggle');
+        const langSelect = document.getElementById('lang-select');
 
         function updateLanguage() {
             document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -371,20 +489,19 @@
                     if (key === 'heroTitle') {
                         el.innerHTML = translation;
                     } else if (key === 'aboutDesc') {
-                        // Per far risaltare lo stile "citazione/diario" nella bio, iniettiamo il testo
                         el.innerHTML = `“${translation}”`;
                     } else {
                         el.textContent = translation;
                     }
                 }
             });
-            langToggleBtn.textContent = currentLang === 'it' ? 'EN' : 'IT';
             
+            langSelect.value = currentLang;
             updateStyleSpecs(activeStyle);
         }
 
-        langToggleBtn.addEventListener('click', () => {
-            currentLang = currentLang === 'it' ? 'en' : 'it';
+        langSelect.addEventListener('change', (e) => {
+            currentLang = e.target.value;
             updateLanguage();
         });
 
@@ -419,21 +536,21 @@
             napoletana: {
                 hyd: '65%',
                 hydVal: 65,
-                leavening: { it: '24 ore', en: '24 hours' },
+                leavening: { it: '24 ore', en: '24 hours', es: '24 horas', fr: '24 heures', de: '24 Stunden' },
                 temp: '450°C',
                 noteKey: 'noteNapoletana'
             },
             teglia: {
                 hyd: '80%',
                 hydVal: 80,
-                leavening: { it: '48 ore (frigo)', en: '48 hours (fridge)' },
+                leavening: { it: '48 ore (frigo)', en: '48 hours (fridge)', es: '48 horas (nevera)', fr: '48 heures (frigo)', de: '48 Stunden (Kühlschrank)' },
                 temp: '250°C',
                 noteKey: 'noteTeglia'
             },
             ruota: {
                 hyd: '58%',
                 hydVal: 58,
-                leavening: { it: '12 ore', en: '12 hours' },
+                leavening: { it: '12 ore', en: '12 hours', es: '12 horas', fr: '12 heures', de: '12 Stunden' },
                 temp: '430°C',
                 noteKey: 'noteRuota'
             }
