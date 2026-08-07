@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung - Pizza Alchemy</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2rem;
+            color: #111;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+        h2 {
+            font-size: 1.4rem;
+            color: #222;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul {
+            margin-top: 0;
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .footer-date {
+            font-style: italic;
+            margin-top: 40px;
+            border-top: 1px solid #eaeaea;
+            padding-top: 15px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Datenschutzerklärung</h1>
+
+    <p>Diese Datenschutzerklärung gilt für die Anwendung <strong>Pizza Alchemy</strong> für mobile Geräte sowie für alle damit verbundenen Dienste, die von <strong>Pietro Marzio</strong> betrieben werden (zusammenfassend die „Anwendung“). Pietro Marzio wird im Folgenden als „Diensteanbieter“ bezeichnet.</p>
+
+    <h2>Erhebung und Verwendung von Informationen</h2>
+    <p>Die Anwendung erhebt Informationen, wenn Sie diese herunterladen und nutzen. Diese Informationen können Daten umfassen wie:</p>
+    <ul>
+        <li>Die IP-Adresse (Internet Protocol) Ihres Geräts</li>
+        <li>Die Seiten der Anwendung, die Sie besuchen, Uhrzeit und Datum Ihres Besuchs sowie die auf diesen Seiten verbrachte Zeit</li>
+        <li>Die in der Anwendung verbrachte Gesamtzeit</li>
+        <li>Das von Ihnen genutzte mobile Betriebssystem</li>
+    </ul>
+
+    <h2>Cookies und Tracking-Technologien</h2>
+    <p>Die Anwendung oder die darin enthaltenen SDKs von Drittanbietern können Cookies, SDKs, Pixel und ähnliche Technologien verwenden, um Funktionalität, Analytik oder die Bereitstellung des Dienstes zu unterstützen. Sofern nach geltendem Recht erforderlich, holt der Diensteanbieter Ihre Einwilligung ein, bevor nicht essenzielle Tracking-Technologien eingesetzt werden.</p>
+
+    <h2>Standortinformationen</h2>
+    <p>Die Anwendung erhebt den Standort Ihres Geräts, um standortbezogene Funktionen anzubieten, die Anwendung zu verbessern und zugehörige Dienste zu unterstützen.</p>
+    <ul>
+        <li><strong>Standortdienste:</strong> Der Diensteanbieter kann Standortdaten verwenden, um Funktionen oder Inhalte anzubieten, die auf Ihren Standort abgestimmt sind.</li>
+        <li><strong>Analytik und Verbesserungen:</strong> Aggregierte Standortdaten können dem Diensteanbieter helfen, Nutzungsmuster zu verstehen und die Leistung zu verbessern.</li>
+        <li><strong>Dienste von Drittanbietern:</strong> Standortdaten können an Dienste von Drittanbietern weitergegeben werden, die das Funktionieren der Anwendung unterstützen, unter Einhaltung dieser Datenschutzerklärung und des geltenden Rechts.</li>
+    </ul>
+
+    <h2>Ihre Rechte</h2>
+    <p>Sie können Auskunft über die vom Diensteanbieter verarbeiteten personenbezogenen Daten sowie deren Berichtigung oder Löschung verlangen. Um diese Rechte auszuüben oder Ihre Einwilligung zu widerrufen, wenn die Verarbeitung auf dieser beruht, kontaktieren Sie den Diensteanbieter unter <a href="mailto:pizzaalchemy.app@gmail.com">pizzaalchemy.app@gmail.com</a>.</p>
+
+    <h2>Ihre Datenschutzrechte in Kalifornien (CCPA/CPRA)</h2>
+    <p>Wenn Sie Ihren Wohnsitz in Kalifornien haben, haben Sie das Recht zu erfahren, welche personenbezogenen Daten erhoben werden, das Recht auf Löschung Ihrer personenbezogenen Daten, das Recht, dem Verkauf oder der Weitergabe Ihrer personenbezogenen Daten zu widersprechen, und das Recht, aufgrund der Ausübung dieser Rechte nicht diskriminiert zu werden. Um Ihre Rechte gemäß CCPA/CPRA auszuüben, wenden Sie sich an den Diensteanbieter unter <a href="mailto:pizzaalchemy.app@gmail.com">pizzaalchemy.app@gmail.com</a>.</p>
+    <p>Der Diensteanbieter kann die von Ihnen bereitgestellten Informationen verwenden, um Ihnen wichtige Mitteilungen, erforderliche Benachrichtigungen und, soweit gesetzlich zulässig, kommerzielle Mitteilungen zu senden.</p>
+    <p>Um Ihre Nutzererfahrung bei der Verwendung der Anwendung zu verbessern, kann der Diensteanbieter Sie bitten, bestimmte personenbezogene Daten bereitzustellen. Die vom Diensteanbieter angeforderten Informationen werden wie in dieser Datenschutzerklärung beschrieben aufbewahrt und verwendet.</p>
+
+    <h2>Zugriff durch Dritte</h2>
+    <p>Nur aggregierte und anonymisierte Daten werden regelmäßig an externe Dienste übermittelt, um dem Diensteanbieter bei der Verbesserung der Anwendung und seines Dienstes zu helfen. Der Diensteanbieter darf Ihre Informationen nur auf die in dieser Erklärung beschriebene Weise an Dritte weitergeben.</p>
+
+    <h2>Internationale Datenübermittlungen</h2>
+    <p>Der Diensteanbieter oder seine externen Dienstleister können personenbezogene Daten in andere Länder als Ihr Wohnsitzland übermitteln, auch außerhalb des Europäischen Wirtschaftsraums (EWR). Wenn das geltende Recht Garantien für internationale Übermittlungen vorschreibt, greift der Diensteanbieter auf geeignete Mechanismen zurück:</p>
+    <ul>
+        <li>Die von der Europäischen Kommission genehmigten Standardvertragsklauseln (SCCs)</li>
+        <li>Angemessenheitsbeschlüsse oder andere legal anerkannte Übermittlungsmechanismen</li>
+        <li>Ihre Einwilligung, sofern erforderlich und gesetzlich zulässig</li>
+    </ul>
+    <p>Die Datenschutzgesetze anderer Länder können von denen Ihrer Rechtsordnung abweichen. Soweit gesetzlich vorgeschrieben, wendet der Diensteanbieter geeignete Garantien an und holt die für die Übermittlung erforderliche Einwilligung ein.</p>
+    <p>Bitte beachten Sie, dass die Anwendung Dienste von Drittanbietern in Anspruch nimmt, die über eigene Datenschutzbestimmungen bezüglich der Datenverarbeitung verfügen. Nachstehend finden Sie die Links zu den Datenschutzbestimmungen der von der Anwendung genutzten Drittanbieter:</p>
+    <ul>
+        <li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
+    </ul>
+    <p>Der Diensteanbieter kann die von Ihnen bereitgestellten sowie die automatisch erhobenen Informationen offenlegen:</p>
+    <ul>
+        <li>wenn dies gesetzlich vorgeschrieben ist, beispielsweise um einer gerichtlichen Anordnung oder einem ähnlichen rechtlichen Verfahren nachzukommen;</li>
+        <li>wenn er in gutem Glauben davon ausgeht, dass die Offenlegung erforderlich ist, um seine Rechte zu schützen, Ihre Sicherheit oder die anderer zu gewährleisten, Betrug zu untersuchen oder auf Behördenanfragen zu antworten;</li>
+        <li>gegenüber seinen vertrauenswürdigen Dienstleistern, die in seinem Auftrag handeln, die die ihnen offengelegten Informationen nicht eigenständig nutzen und die sich zur Einhaltung der in dieser Erklärung festgelegten Regeln verpflichtet haben.</li>
+    </ul>
+
+    <h2>Widerspruchsrecht (Opt-Out)</h2>
+    <p>Sie können jegliche weitere Erhebung von Informationen durch die Anwendung beenden, indem Sie diese von Ihrem mobilen Gerät deinstallieren. Die Deinstallation beendet die Datenerhebung von Ihrem Gerät, löscht jedoch nicht automatisch Informationen, die bereits an den Diensteanbieter oder an Dritte übermittelt wurden.</p>
+    <p>Um die Löschung Ihrer personenbezogenen Daten zu beantragen, Ihre Einwilligung zu widerrufen oder eines Ihrer Rechte auszuüben, wenden Sie sich an den Diensteanbieter unter <a href="mailto:pizzaalchemy.app@gmail.com">pizzaalchemy.app@gmail.com</a>.</p>
+
+    <h2>Aufbewahrungsrichtlinie</h2>
+    <p>Der Diensteanbieter bewahrt personenbezogene Daten basierend auf deren Erforderlichkeit für die angegebenen Zwecke auf:</p>
+    <ul>
+        <li><strong>Vom Nutzer bereitgestellte Daten:</strong> Werden für die gesamte Dauer der Nutzung der Anwendung plus 12 Monate aufbewahrt, es sei denn, das Gesetz schreibt eine längere Aufbewahrungsfrist vor</li>
+        <li><strong>Automatisch erhobene Daten:</strong> Werden für maximal 24 Monate ab der Erhebung aufbewahrt, es sei denn, eine längere Aufbewahrung ist zur Erfüllung rechtlicher Verpflichtungen erforderlich</li>
+        <li><strong>Aggregierte und anonymisierte Daten:</strong> Werden unbegrenzt aufbewahrt, da sie Sie nicht mehr identifizieren</li>
+        <li><strong>Für die Einhaltung gesetzlicher Pflichten erforderliche Daten:</strong> Werden so lange aufbewahrt, wie es das geltende Recht vorschreibt</li>
+    </ul>
+    <p>Sie können die Löschung Ihrer personenbezogenen Daten verlangen, unbeschadet etwaiger gesetzlicher Aufbewahrungspflichten. Wenn Sie möchten, dass der Diensteanbieter die von Ihnen über die Anwendung bereitgestellten Daten löscht, kontaktieren Sie ihn bitte unter <a href="mailto:pizzaalchemy.app@gmail.com">pizzaalchemy.app@gmail.com</a>. Bitte beachten Sie, dass einige vom Nutzer bereitgestellte Daten für das ordnungsgemäße Funktionieren der Anwendung erforderlich sein können.</p>
+
+    <h2>Minderjährige</h2>
+    <p>Die Anwendung richtet sich nicht an Kinder unter 16 Jahren oder an eine höhere Altersgrenze, die nach geltendem Recht festgelegt ist. Der Diensteanbieter fordert wissentlich keine Daten von Kindern an und richtet keine kommerziellen Aktivitäten an diese.</p>
+    <p>Wenn das geltende Recht die Einwilligung eines Elternteils oder Erziehungsberechtigten vorschreibt, ist die Anwendung nicht für die Nutzung ohne diese Einwilligung bestimmt. Der Diensteanbieter erhebt wissentlich keine personenbezogenen Daten von Kindern unter 16 Jahren unter Verletzung des geltenden Rechts. Stellt der Diensteanbieter fest, dass ein Kind personenbezogene Daten bereitgestellt hat, löscht er diese unverzüglich von seinen Servern. Wenn Sie Elternteil oder Erziehungsberechtigter sind und feststellen, dass Ihr Kind dem Diensteanbieter personenbezogene Daten übermittelt hat, wenden Sie sich bitte an ihn (<a href="mailto:pizzaalchemy.app@gmail.com">pizzaalchemy.app@gmail.com</a>), damit er die erforderlichen Maßnahmen ergreifen kann.</p>
+
+    <h2>Sicherheit</h2>
+    <p>Der Diensteanbieter legt großen Wert auf die Wahrung der Vertraulichkeit Ihrer Informationen. Es werden physische, elektronische und verfahrenstechnische Sicherheitsvorkehrungen getroffen, um die von ihm verarbeiteten und aufbewahrten Informationen zu schützen.</p>
+
+    <h2>Benachrichtigung bei Datenschutzverletzungen</h2>
+    <p>Im Falle einer Datenschutzverletzung, die Ihre personenbezogenen Daten betrifft, wird Sie der Diensteanbieter gemäß den geltenden gesetzlichen Bestimmungen informieren und Ihnen, sofern erforderlich, Informationen über die Art der Verletzung und die zu ihrer Behebung ergriffenen Maßnahmen zukommen lassen.</p>
+
+    <h2>Änderungen</h2>
+    <p>Der Diensteanbieter kann diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Er wird Sie über wesentliche Änderungen informieren, indem er die aktualisierte Erklärung mit einem neuen Datum des Inkrafttretens veröffentlicht. Soweit gesetzlich vorgeschrieben, wird vor dem Wirksamwerden der Änderungen Ihre Einwilligung eingeholt.</p>
+    <p>Frühere Versionen dieser Erklärung werden aufbewahrt und auf Anfrage beim Diensteanbieter unter <a href="mailto:pizzaalchemy.app@gmail.com">pizzaalchemy.app@gmail.com</a> zur Verfügung gestellt.</p>
+
+    <h2>Ihre Einwilligung</h2>
+    <p>Beruht die Verarbeitung auf einer Einwilligung, erteilen Sie diese Einwilligung durch ausdrückliche Annahme der betreffenden Funktion oder Handlung. Sie können Ihre Einwilligung jederzeit widerrufen, ohne dass die Rechtmäßigkeit der vor dem Widerruf erfolgten Verarbeitung berührt wird. Verarbeitungen auf anderen Rechtsgrundlagen erfolgen wie oben beschrieben.</p>
+
+    <h2>Kontakt</h2>
+    <p>Bei Fragen zum Datenschutz während der Nutzung der Anwendung oder zu unseren Praktiken wenden Sie sich bitte per E-Mail an den Diensteanbieter unter <a href="mailto:pizzaalchemy.app@gmail.com">pizzaalchemy.app@gmail.com</a>.</p>
+
+    <p class="footer-date">Diese Datenschutzerklärung tritt am 17.07.2026 in Kraft.</p>
+
+</body>
+</html>
