@@ -219,34 +219,22 @@
         </div>
     </section>
 
-    <!-- Support and Contact Section -->
-    <section class="max-w-4xl mx-auto px-6 py-12">
-        <div class="grid md:grid-cols-2 gap-8">
-            
-            <!-- Colonna Sinistra: PayPal -->
-            <div class="bg-brand-accentSoft dark:bg-brandDark-accentSoft p-8 rounded-3xl border border-brand-accent/20 dark:border-brandDark-accent/20 flex flex-col items-center justify-between text-center space-y-6">
-                <div class="space-y-4">
-                    <span class="text-4xl">☕</span>
-                    <h2 data-i18n="supportTitle" class="text-2xl font-serif font-bold">Supporta il Progetto</h2>
-                    <p data-i18n="supportDesc" class="text-sm text-brand-secondary dark:text-brandDark-secondary">
-                        Pizza Alchemy è sviluppata con passione, senza pubblicità invasive. Se l'app ti è stata utile, offrimi un trancio di margherita!
-                    </p>
-                </div>
-                
-                <div class="flex flex-col items-center w-full">
-                    <a id="paypal-link" href="#" target="_blank" class="inline-flex items-center gap-2 bg-brand-accent text-brand-onAccent dark:bg-brandDark-accent dark:text-brandDark-onAccent px-6 py-3 rounded-full font-bold hover:opacity-90 transition transform hover:scale-105 shadow-md">
-                        <span data-i18n="supportBtn">Supporta con PayPal</span>
-                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                            <path d="M20.06 7.64c-.38-2.19-2.06-3.81-4.78-3.81H7.81c-.55 0-1 .41-1.07.95L3.38 20.31c-.05.33.2.62.53.62h4.52l1.2-7.55c.03-.23.23-.4.47-.4h2.13c3.08 0 5.49-1.25 6.19-4.83.27-1.39.06-2.58-.76-3.51M13.2 10.13h-2.2l.66-4.13h1.54c1.11 0 1.9.46 2.05 1.44.13.88-.41 2.69-2.05 2.69z"/>
-                        </svg>
-                    </a>
-                    <p data-i18n="supportTip" class="text-[11px] text-brand-secondary dark:text-brandDark-secondary mt-3 italic max-w-xs text-center leading-tight">
-                        Ricordati di aggiungere un messaggio (es. il tuo nome o un saluto) durante la transazione per un ringraziamento speciale!
-                    </p>
-                </div>
-            </div>
+    <!-- Contact Section
 
-            <!-- Colonna Destra: Email (Contatti) -->
+         ⛔ QUI STAVA LA COLONNA "SUPPORTA IL PROGETTO" CON IL PULSANTE PAYPAL,
+         E NON VA RIMESSA.
+
+         Questa pagina è l'URL di supporto e di marketing dichiarato in App Store
+         Connect: il revisore ci arriva dalla scheda dell'app. Apple ha rifiutato
+         Pizza Alchemy due volte sotto la 3.1.1 (donazioni allo sviluppo fuori
+         dall'In-App Purchase), la seconda quando l'app era già pulita, perché il
+         pulsante era ancora qui. Ragionamento completo nel repo dell'app,
+         docs/APP_STORE_REVIEW.md. Se un giorno le donazioni si rivogliono,
+         passano da un IAP, non da questa pagina. -->
+    <section class="max-w-4xl mx-auto px-6 py-12">
+        <div class="max-w-md mx-auto">
+
+            <!-- Email (Contatti) -->
             <div class="bg-brand-element dark:bg-brandDark-element p-8 rounded-3xl border border-brand-border dark:border-brandDark-border flex flex-col items-center justify-between text-center space-y-6">
                 <div class="space-y-4">
                     <span class="text-4xl">✉️</span>
@@ -276,9 +264,11 @@
     <footer class="max-w-5xl mx-auto px-6 py-8 border-t border-brand-border dark:border-brandDark-border text-center text-xs text-brand-secondary dark:text-brandDark-secondary space-y-2">
         <p data-i18n="footerText">© 2026 Pizza Alchemy. Fatto con ❤️ e passione per l'impasto perfetto.</p>
         <p>
-            <a href="/privacy.html" class="hover:underline text-brand-accent dark:text-brandDark-accent font-semibold" data-i18n="privacyLink">Informativa sulla Privacy</a>
+            <!-- L'href lo scrive updateLanguage(): puntava a /privacy.html, che
+                 su questo sito non esiste (404). I documenti veri sono i
+                 PrivacyPolicy-XX.html, uno per lingua. -->
+            <a id="privacy-link" href="PrivacyPolicy-it.html" class="hover:underline text-brand-accent dark:text-brandDark-accent font-semibold" data-i18n="privacyLink">Informativa sulla Privacy</a>
         </p>
-        <p data-i18n="footerSub">Le donazioni aiutano a mantenere attivi i server e a finanziare lo sviluppo dell'app.</p>
     </footer>
 
     <!-- Interactive Scripts -->
@@ -312,18 +302,12 @@
                 aboutRole: "L'Alchimista",
                 aboutSub: "Dietro le quinte",
                 aboutTitle: "Chi c'è dietro Pizza Alchemy?",
-                aboutDesc: "Sono un ingegnere con una passione viscerale per l'arte bianca. Con Pizza Alchemy ho voluto fondere il rigore delle formule matematiche con la poesia degli ingredienti stagionali e il rito di fare la pizza in casa. Perché anche l'equazione più perfetta, alla fine, ha bisogno di cuore e calore per prendere vita.",
-                supportTitle: "Supporta il Progetto",
-                supportDesc: "Pizza Alchemy è sviluppata con passione, senza pubblicità invasive. Se l'app ti è stata utile, offrimi un trancio di margherita!",
-                supportBtn: "Supporta con PayPal",
-                supportTip: "Ricordati di aggiungere un messaggio (es. il tuo nome o un saluto) durante la transazione per un ringraziamento speciale!",
-                contactTitle: "Hai domande?",
+                aboutDesc: "Sono un ingegnere con una passione viscerale per l'arte bianca. Con Pizza Alchemy ho voluto fondere il rigore delle formule matematiche con la poesia degli ingredienti stagionali e il rito di fare la pizza in casa. Perché anche l'equazione più perfetta, alla fine, ha bisogno di cuore e calore per prendere vita.",                contactTitle: "Hai domande?",
                 contactDesc: "Segnalazioni di bug, idee per nuove funzionalità o vuoi semplicemente condividere la foto della tua ultima pizza? Scrivici un'email!",
                 contactBtn: "Scrivici un'email",
                 contactTip: "Ti risponderemo appena sfornato il prossimo impasto!",
                 privacyLink: "Informativa sulla Privacy",
-                footerText: "© 2026 Pizza Alchemy. Fatto con ❤️ e passione per l'impasto perfetto.",
-                footerSub: "Le donazioni aiutano a mantenere attivi i server e a finanziare lo sviluppo dell'app."
+                footerText: "© 2026 Pizza Alchemy. Fatto con ❤️ e passione per l'impasto perfetto."
             },
             en: {
                 heroBadge: "Neapolitan art meets science",
@@ -350,18 +334,12 @@
                 aboutRole: "The Alchemist",
                 aboutSub: "Behind the scenes",
                 aboutTitle: "Who is behind Pizza Alchemy?",
-                aboutDesc: "I am an engineer with a visceral passion for baking. With Pizza Alchemy, I wanted to merge the rigor of mathematical formulas with the poetry of seasonal ingredients and the ritual of making pizza at home. Because even the most perfect equation, in the end, needs heart and heat to come alive.",
-                supportTitle: "Support the Project",
-                supportDesc: "Pizza Alchemy is developed with passion, without invasive ads. If the app helped you bake a great pizza, buy me a slice of margherita!",
-                supportBtn: "Support with PayPal",
-                supportTip: "Remember to add a message (e.g. your name or a greeting) during payment for a special thanks!",
-                contactTitle: "Have questions?",
+                aboutDesc: "I am an engineer with a visceral passion for baking. With Pizza Alchemy, I wanted to merge the rigor of mathematical formulas with the poetry of seasonal ingredients and the ritual of making pizza at home. Because even the most perfect equation, in the end, needs heart and heat to come alive.",                contactTitle: "Have questions?",
                 contactDesc: "Bug reports, ideas for new features, or just want to share a photo of your latest bake? Send us an email!",
                 contactBtn: "Send us an email",
                 contactTip: "We'll get back to you as soon as the next dough is baked!",
                 privacyLink: "Privacy Policy",
-                footerText: "© 2026 Pizza Alchemy. Made with ❤️ and passion for the perfect dough.",
-                footerSub: "Donations help keep the servers running and fund the development of the app."
+                footerText: "© 2026 Pizza Alchemy. Made with ❤️ and passion for the perfect dough."
             },
             es: {
                 heroBadge: "El arte napolitano se une a la ciencia",
@@ -388,18 +366,12 @@
                 aboutRole: "El Alquimista",
                 aboutSub: "Entre bambalinas",
                 aboutTitle: "¿Quién está detrás de Pizza Alchemy?",
-                aboutDesc: "Soy un ingeniero con una pasión visceral por el arte de la panadería y la pizza. Con Pizza Alchemy quise fusionar el rigor de las fórmulas matemáticas con la poesía de los ingredientes de temporada y el ritual de hacer pizza en casa. Porque incluso la ecuación más perfecta, al final, necesita corazón y calor para cobrar vida.",
-                supportTitle: "Apoya el Proyecto",
-                supportDesc: "Pizza Alchemy está desarrollada con pasión, sin anuncios invasivos. Si la aplicación te ha sido útil, ¡invítame a una porción de margherita!",
-                supportBtn: "Apoyar con PayPal",
-                supportTip: "¡Recuerda añadir un mensaje (ej. tu nombre o un saludo) durante la transacción para un agradecimiento especial!",
-                contactTitle: "¿Tienes preguntas?",
+                aboutDesc: "Soy un ingeniero con una pasión visceral por el arte de la panadería y la pizza. Con Pizza Alchemy quise fusionar el rigor de las fórmulas matemáticas con la poesía de los ingredientes de temporada y el ritual de hacer pizza en casa. Porque incluso la ecuación más perfecta, al final, necesita corazón y calor para cobrar vida.",                contactTitle: "¿Tienes preguntas?",
                 contactDesc: "¿Reportes de errores, ideas para nuevas funciones o simplemente quieres compartir la foto de tu última pizza? ¡Escríbenos un correo!",
                 contactBtn: "Escríbenos un correo",
                 contactTip: "¡Te responderemos en cuanto salga del horno la siguiente masa!",
                 privacyLink: "Política de Privacidad",
-                footerText: "© 2026 Pizza Alchemy. Hecho con ❤️ y pasión por la masa perfecta.",
-                footerSub: "Las donaciones ayudan a mantener activos los servidores y a financiar el desarrollo de la aplicación."
+                footerText: "© 2026 Pizza Alchemy. Hecho con ❤️ y pasión por la masa perfecta."
             },
             fr: {
                 heroBadge: "L'art napolitain rencontre la science",
@@ -426,18 +398,12 @@
                 aboutRole: "L'Alchimiste",
                 aboutSub: "Coulisses",
                 aboutTitle: "Qui est derrière Pizza Alchemy ?",
-                aboutDesc: "Je suis un ingénieur passionné par l'art de la boulangerie et de la pizza. Avec Pizza Alchemy, j'ai voulu fusionner la rigueur des formules mathématiques avec la poésie des ingrédients de saison et le rituel de la pizza maison. Car même l'équation la plus parfaite a besoin de cœur et de chaleur pour prendre vie.",
-                supportTitle: "Soutenir le Projet",
-                supportDesc: "Pizza Alchemy est développée avec passion, sans publicités intrusives. Si l'application vous a été utile, offrez-moi une part de margherita !",
-                supportBtn: "Soutenir via PayPal",
-                supportTip: "N'oubliez pas d'ajouter un message (ex. votre nom ou un mot amical) lors de la transaction pour des remerciements personnalisés !",
-                contactTitle: "Des questions ?",
+                aboutDesc: "Je suis un ingénieur passionné par l'art de la boulangerie et de la pizza. Avec Pizza Alchemy, j'ai voulu fusionner la rigueur des formules mathématiques avec la poésie des ingrédients de saison et le rituel de la pizza maison. Car même l'équation la plus parfaite a besoin de cœur et de chaleur pour prendre vie.",                contactTitle: "Des questions ?",
                 contactDesc: "Rapports de bugs, idées de fonctionnalités ou envie de partager la photo de votre dernière pizza ? Envoyez-nous un e-mail !",
                 contactBtn: "Envoyez-nous un e-mail",
                 contactTip: "Nous vous répondrons dès que la prochaine pâte sera sortie du four !",
                 privacyLink: "Politique de Confidentialité",
-                footerText: "© 2026 Pizza Alchemy. Fait avec ❤️ et passion pour la pâte parfaite.",
-                footerSub: "Les dons aident à maintenir les serveurs actifs et à financer le développement de l'application."
+                footerText: "© 2026 Pizza Alchemy. Fait avec ❤️ et passion pour la pâte parfaite."
             },
             de: {
                 heroBadge: "Neapolitanische Kunst trifft auf Wissenschaft",
@@ -464,18 +430,12 @@
                 aboutRole: "Der Alchemist",
                 aboutSub: "Hinter den Kulissen",
                 aboutTitle: "Wer steckt hinter Pizza Alchemy?",
-                aboutDesc: "Ich bin ein Ingenieur mit einer tiefen Leidenschaft für die Backkunst. Mit Pizza Alchemy wollte ich die Präzision mathematischer Formeln mit der Poesie saisonaler Zutaten und dem Ritual des Pizzabackens zu Hause verbinden. Denn selbst die meisterhafteste Gleichung braucht am Ende Herz und Hitze, um zum Leben zu erwachen.",
-                supportTitle: "Unterstütze das Projekt",
-                supportDesc: "Pizza Alchemy wird mit Leidenschaft entwickelt, ohne störende Werbung. Wenn dir die App geholfen hat, spendiere mir ein Stück Margherita!",
-                supportBtn: "Unterstützen mit PayPal",
-                supportTip: "Denke daran, während der Transaktion eine Nachricht (z. B. deinen Namen oder einen Gruß) für ein besonderes Dankeschön hinzuzufügen!",
-                contactTitle: "Hast du Fragen?",
+                aboutDesc: "Ich bin ein Ingenieur mit einer tiefen Leidenschaft für die Backkunst. Mit Pizza Alchemy wollte ich die Präzision mathematischer Formeln mit der Poesie saisonaler Zutaten und dem Ritual des Pizzabackens zu Hause verbinden. Denn selbst die meisterhafteste Gleichung braucht am Ende Herz und Hitze, um zum Leben zu erwachen.",                contactTitle: "Hast du Fragen?",
                 contactDesc: "Fehlerberichte, Ideen für neue Funktionen oder möchtest du einfach ein Foto deiner neuesten Pizza teilen? Schreib uns eine E-Mail!",
                 contactBtn: "Schreib uns eine E-Mail",
                 contactTip: "Wir antworten dir, sobald der nächste Teig gebacken ist!",
                 privacyLink: "Datenschutzerklärung",
-                footerText: "© 2026 Pizza Alchemy. Gemacht mit ❤️ und Leidenschaft für den perfekten Teig.",
-                footerSub: "Spenden helfen, die Server am Laufen zu halten und die Weiterentwicklung der App zu finanzieren."
+                footerText: "© 2026 Pizza Alchemy. Gemacht mit ❤️ und Leidenschaft für den perfekten Teig."
             }
         };
 
@@ -496,6 +456,14 @@
                 }
             });
             
+            // Il documento privacy segue la lingua scelta: i file sono
+            // PrivacyPolicy-it/en/es/fr/de.html, cioè lo stesso codice lingua
+            // che usa il selettore.
+            const privacyLink = document.getElementById('privacy-link');
+            if (privacyLink) {
+                privacyLink.href = `PrivacyPolicy-${currentLang}.html`;
+            }
+
             langSelect.value = currentLang;
             updateStyleSpecs(activeStyle);
         }
@@ -593,30 +561,10 @@
         // Inizializza lingua e profilo
         updateLanguage();
 
-        // --- 4. CONFIGURATION LOADER (PayPal & Email Setup) ---
-        // PayPal Loader
-        const paypalLink = document.getElementById('paypal-link');
-        if (paypalLink && typeof CONFIG !== 'undefined' && CONFIG.paypalUsername) {
-            let username = CONFIG.paypalUsername.trim();
-            let url = "";
-
-            if (username.startsWith('http://') || username.startsWith('https://')) {
-                url = username;
-            } else if (username !== "YOUR_PAYPAL_USERNAME" && username !== "") {
-                url = `https://paypal.me/${username}`;
-            }
-
-            if (url) {
-                const amount = (typeof CONFIG.defaultDonationAmount !== 'undefined') ? CONFIG.defaultDonationAmount.trim() : "";
-                const currency = (typeof CONFIG.currency !== 'undefined') ? CONFIG.currency.trim() : "";
-
-                if (amount !== "") {
-                    url += `/${amount}${currency}`;
-                }
-                
-                paypalLink.href = url;
-            }
-        }
+        // --- 4. CONFIGURATION LOADER (Email Setup) ---
+        // Qui stava il loader di PayPal, che leggeva CONFIG.paypalUsername e
+        // componeva il link paypal.me. Rimosso con la sezione donazioni: vedi il
+        // commento sopra la sezione Contatti.
 
         // Email Loader (Sicuro contro lo spam-scraping)
         const emailLink = document.getElementById('email-link');
