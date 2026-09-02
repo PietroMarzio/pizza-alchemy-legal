@@ -61,13 +61,14 @@
         </div>
         
         <div class="flex items-center gap-3">
-            <!-- Language Selector (IT, EN, ES, FR, DE) -->
+            <!-- Language Selector (IT, EN, ES, FR, DE, NL) -->
             <select id="lang-select" class="px-2.5 py-1.5 rounded-lg text-xs font-bold bg-brand-element dark:bg-brandDark-element border border-brand-border dark:border-brandDark-border hover:opacity-80 transition cursor-pointer outline-none">
                 <option value="it">🇮🇹 IT</option>
                 <option value="en">🇬🇧 EN</option>
                 <option value="es">🇪🇸 ES</option>
                 <option value="fr">🇫🇷 FR</option>
                 <option value="de">🇩🇪 DE</option>
+                <option value="nl">🇳🇱 NL</option>
             </select>
             
             <!-- Dark Mode Toggle -->
@@ -273,7 +274,7 @@
 
     <!-- Interactive Scripts -->
     <script>
-        // --- 1. LOCALIZATION SYSTEM (IT / EN / ES / FR / DE) ---
+        // --- 1. LOCALIZATION SYSTEM (IT / EN / ES / FR / DE / NL) ---
         let currentLang = 'it';
         
         const translations = {
@@ -436,6 +437,39 @@
                 contactTip: "Wir antworten dir, sobald der nächste Teig gebacken ist!",
                 privacyLink: "Datenschutzerklärung",
                 footerText: "© 2026 Pizza Alchemy. Gemacht mit ❤️ und Leidenschaft für den perfekten Teig."
+            },
+            nl: {
+                heroBadge: "Napolitaanse kunst ontmoet wetenschap",
+                heroTitle: "Bereken het perfecte deeg, <span class=\"text-brand-accent dark:text-brandDark-accent\">tot op de milligram</span>.",
+                heroDesc: "Pizza Alchemy is je wetenschappelijke gids voor legendarische pizza's. Bereken de ideale hydratatie, ontdek seizoensingrediënten uit jouw regio en bak meesterwerken.",
+                appStore: "Download in de",
+                playStore: "Ontdek het op",
+                mockupTitle: "Deegprofielen",
+                mockupSub: "Tik op een stijl om de parameters te zien",
+                paramHydration: "Hydratatie",
+                paramLeavening: "Rijstijd",
+                paramTemp: "Oventemperatuur",
+                paramNote: "Notitie van de Alchemist",
+                noteNapoletana: "Vraagt om zeer hoge temperaturen (430-480°C) en korte baktijden (60-90 seconden). Uitzonderlijk zacht en elastisch deeg.",
+                noteTeglia: "Hoge hydratatie (tot 80%). Gebakken op een bakplaat bij gewone oventemperaturen. Superluchtig, licht en krokant resultaat.",
+                noteRuota: "De traditionele straatpizza uit de steegjes van Napels. Flinterdun, groter dan het bord, met beperkte hydratatie voor maximale uitrekbaarheid.",
+                featuresTitle: "Wat je in de app vindt",
+                feat1Title: "Geavanceerde calculator",
+                feat1Desc: "Vind de precieze balans tussen water, bloem en gist op basis van de rijstijd en de temperatuur in je keuken.",
+                feat2Title: "Lokale ingrediënten",
+                feat2Desc: "Slimme suggesties op basis van jouw regio. Steun de biodiversiteit en gebruik altijd verse ingrediënten.",
+                feat3Title: "Dagboek van de Alchemist",
+                feat3Desc: "Bewaar je combinaties, houd je resultaten bij en verfijn je techniek baksel na baksel.",
+                aboutRole: "De Alchemist",
+                aboutSub: "Achter de schermen",
+                aboutTitle: "Wie zit er achter Pizza Alchemy?",
+                aboutDesc: "Ik ben een ingenieur met een diepe passie voor de bakkunst. Met Pizza Alchemy wilde ik de striktheid van wiskundige formules samenbrengen met de poëzie van seizoensingrediënten en het ritueel van thuis pizza maken. Want zelfs de perfectste vergelijking heeft uiteindelijk hart en hitte nodig om tot leven te komen.",
+                contactTitle: "Heb je vragen?",
+                contactDesc: "Bugmeldingen, ideeën voor nieuwe functies of wil je gewoon een foto van je laatste pizza delen? Stuur ons een e-mail!",
+                contactBtn: "Stuur ons een e-mail",
+                contactTip: "We reageren zodra het volgende deeg de oven uit is!",
+                privacyLink: "Privacybeleid",
+                footerText: "© 2026 Pizza Alchemy. Gemaakt met ❤️ en passie voor het perfecte deeg."
             }
         };
 
@@ -504,21 +538,21 @@
             napoletana: {
                 hyd: '65%',
                 hydVal: 65,
-                leavening: { it: '24 ore', en: '24 hours', es: '24 horas', fr: '24 heures', de: '24 Stunden' },
+                leavening: { it: '24 ore', en: '24 hours', es: '24 horas', fr: '24 heures', de: '24 Stunden', nl: '24 uur' },
                 temp: '450°C',
                 noteKey: 'noteNapoletana'
             },
             teglia: {
                 hyd: '80%',
                 hydVal: 80,
-                leavening: { it: '48 ore (frigo)', en: '48 hours (fridge)', es: '48 horas (nevera)', fr: '48 heures (frigo)', de: '48 Stunden (Kühlschrank)' },
+                leavening: { it: '48 ore (frigo)', en: '48 hours (fridge)', es: '48 horas (nevera)', fr: '48 heures (frigo)', de: '48 Stunden (Kühlschrank)', nl: '48 uur (koelkast)' },
                 temp: '250°C',
                 noteKey: 'noteTeglia'
             },
             ruota: {
                 hyd: '58%',
                 hydVal: 58,
-                leavening: { it: '12 ore', en: '12 hours', es: '12 horas', fr: '12 heures', de: '12 Stunden' },
+                leavening: { it: '12 ore', en: '12 hours', es: '12 horas', fr: '12 heures', de: '12 Stunden', nl: '12 uur' },
                 temp: '430°C',
                 noteKey: 'noteRuota'
             }
