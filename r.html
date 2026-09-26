@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Pizza Alchemy</title>
+<!--
+  A recipe shared from Pizza Alchemy (fase 171 of the app, piano prodotto RI2).
+  The recipe travels in the address itself, after the #: this page is static,
+  stores nothing, and the fragment is never sent to the server. It shows what
+  the recipe is and hands it to the app through pizzaalchemy://import.
+  The name comes from whoever wrote the link: it is drawn with textContent,
+  never as HTML.
+-->
+<style>
+  :root {
+    --text: #2B2119; --bg: #FBF6EE; --element: #F3EBDD; --secondary: #6D5E4E;
+    --accent: #C93A2B; --accent-text: #B13326; --on-accent: #FFF8F0; --soft: #F6DFD4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #F5EDE2; --bg: #1A1512; --element: #282019; --secondary: #B8A893;
+      --accent: #C14D3B; --accent-text: #E77E6E; --on-accent: #FFF8F0; --soft: #4A2A21;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.5 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    padding: 24px 16px 48px;
+  }
+  main { max-width: 480px; margin: 0 auto; display: grid; gap: 16px; }
+  .brand { color: var(--accent-text); font-weight: 700; letter-spacing: .02em; }
+  .card { background: var(--element); border-radius: 16px; padding: 20px; display: grid; gap: 8px; }
+  h1 { margin: 0; font-size: 24px; line-height: 1.25; }
+  .facts { color: var(--secondary); margin: 0; }
+  a.button {
+    display: block; text-align: center; text-decoration: none; font-weight: 700;
+    border-radius: 12px; padding: 14px 16px;
+  }
+  .primary { background: var(--accent); color: var(--on-accent); }
+  .secondary { background: var(--soft); color: var(--accent-text); }
+  .stores { display: grid; gap: 8px; }
+  .hint { color: var(--secondary); font-size: 14px; margin: 0; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">Pizza Alchemy</div>
+  <section class="card" id="recipe" hidden>
+    <h1 id="name"></h1>
+    <p class="facts" id="facts"></p>
+    <a class="button primary" id="open" href="#"></a>
+    <p class="hint" id="hint"></p>
+  </section>
+  <section class="card" id="broken" hidden>
+    <h1 id="broken-title"></h1>
+    <p class="facts" id="broken-body"></p>
+  </section>
+  <div class="stores">
+    <a class="button secondary" id="play" href="https://play.google.com/store/apps/details?id=com.pizzaalchemy.app"></a>
+    <a class="button secondary" id="appstore" href="https://apps.apple.com/app/id6792754998"></a>
+  </div>
+</main>
+<script>
+(function () {
+  var T = {
+    it: { open: 'Apri in Pizza Alchemy', hint: 'Se l’app non si apre, installala e poi tocca di nuovo il link.', balls: 'panetti da', water: 'acqua', hours: 'ore', broken: 'Questo link non contiene una ricetta', brokenBody: 'Forse è stato tagliato mentre veniva copiato. Chiedi a chi te l’ha mandato di condividerlo di nuovo.', play: 'Scarica da Google Play', appstore: 'Scarica dall’App Store' },
+    en: { open: 'Open in Pizza Alchemy', hint: 'If the app does not open, install it and tap the link again.', balls: 'dough balls of', water: 'water', hours: 'hours', broken: 'This link does not contain a recipe', brokenBody: 'It may have been cut while it was copied. Ask whoever sent it to share it again.', play: 'Get it on Google Play', appstore: 'Download on the App Store' },
+    fr: { open: 'Ouvrir dans Pizza Alchemy', hint: 'Si l’app ne s’ouvre pas, installe-la puis touche à nouveau le lien.', balls: 'pâtons de', water: 'eau', hours: 'heures', broken: 'Ce lien ne contient pas de recette', brokenBody: 'Il a peut-être été coupé en le copiant. Demande à qui te l’a envoyé de le partager à nouveau.', play: 'Disponible sur Google Play', appstore: 'Télécharger dans l’App Store' },
+    es: { open: 'Abrir en Pizza Alchemy', hint: 'Si la app no se abre, instálala y vuelve a tocar el enlace.', balls: 'bolas de', water: 'agua', hours: 'horas', broken: 'Este enlace no contiene una receta', brokenBody: 'Puede que se cortara al copiarlo. Pide a quien te lo mandó que lo comparta otra vez.', play: 'Descárgala en Google Play', appstore: 'Descárgala en el App Store' },
+    nl: { open: 'Openen in Pizza Alchemy', hint: 'Opent de app niet, installeer hem dan en tik opnieuw op de link.', balls: 'deegballen van', water: 'water', hours: 'uur', broken: 'Deze link bevat geen recept', brokenBody: 'Misschien is hij bij het kopiëren afgebroken. Vraag wie hem stuurde om hem opnieuw te delen.', play: 'Ontdek het op Google Play', appstore: 'Download in de App Store' },
+    de: { open: 'In Pizza Alchemy öffnen', hint: 'Wenn sich die App nicht öffnet, installiere sie und tippe erneut auf den Link.', balls: 'Teiglinge zu', water: 'Wasser', hours: 'Stunden', broken: 'Dieser Link enthält kein Rezept', brokenBody: 'Vielleicht wurde er beim Kopieren abgeschnitten. Bitte die Person, die ihn geschickt hat, ihn noch einmal zu teilen.', play: 'Jetzt bei Google Play', appstore: 'Laden im App Store' }
+  };
+  var lang = (navigator.language || 'en').slice(0, 2).toLowerCase();
+  var t = T[lang] || T.en;
+  document.documentElement.lang = T[lang] ? lang : 'en';
+  function text(id, value) { document.getElementById(id).textContent = value; }
+  text('play', t.play);
+  text('appstore', t.appstore);
+
+  var payload = (location.hash || '').slice(1);
+  var recipe = null;
+  try {
+    if (!/^[A-Za-z0-9_-]+$/.test(payload)) throw new Error('not a payload');
+    var b64 = payload.replace(/-/g, '+').replace(/_/g, '/');
+    while (b64.length % 4) b64 += '=';
+    var bytes = Uint8Array.from(atob(b64), function (c) { return c.charCodeAt(0); });
+    var data = JSON.parse(new TextDecoder().decode(bytes));
+    var p = data && data.p;
+    if (data.v === 1 && typeof data.n === 'string' && p && typeof p.numBalls === 'number' &&
+        typeof p.ballWeightG === 'number' && typeof p.hydrationPct === 'number' &&
+        p.fermentation && typeof p.fermentation.totalHours === 'number') {
+      recipe = data;
+    }
+  } catch (e) {
+    recipe = null;
+  }
+
+  if (!recipe) {
+    text('broken-title', t.broken);
+    text('broken-body', t.brokenBody);
+    document.getElementById('broken').hidden = false;
+    return;
+  }
+  var p = recipe.p;
+  text('name', recipe.n.slice(0, 60) || 'Pizza');
+  text('facts', p.numBalls + ' ' + t.balls + ' ' + Math.round(p.ballWeightG) + ' g · ' +
+    p.hydrationPct + '% ' + t.water + ' · ' + p.fermentation.totalHours + ' ' + t.hours);
+  var open = document.getElementById('open');
+  open.textContent = t.open;
+  open.href = 'pizzaalchemy://import?d=' + payload;
+  text('hint', t.hint);
+  document.getElementById('recipe').hidden = false;
+})();
+</script>
+</body>
+</html>
